@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japan · Oct 23 – Nov 1, 2026</title>
+<meta name="description" content="Tokyo · Hakone · Kyoto · Nara — 8 nights in Japan, Oct 23 – Nov 1, 2026. Flights, day-by-day plan, hotels to book, budget, customs and watch-outs.">
+
+<!-- Open Graph for nice link previews -->
+<meta property="og:title" content="Japan · Oct 23 – Nov 1, 2026">
+<meta property="og:description" content="Tokyo · Hakone · Kyoto · Nara — 8 nights in Japan. Draft itinerary.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=1200&q=80&fm=jpg&auto=format&fit=crop">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://grantuberstine.github.io/brother-japan-trip/">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Emoji favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗼</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FAF6EE;
+    --card: #FFFBF2;
+    --ink: #1F1B16;
+    --ink-soft: #5A534B;
+    --ink-muted: #8A8378;
+    --line: #E5DDC9;
+    --tk: #C8616B;   /* Tokyo */
+    --hk: #4D8A78;   /* Hakone */
+    --ky: #4A82A1;   /* Kyoto & Nara */
+    --tr: #8B8175;   /* Travel */
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.55;
+    padding: 0;
+  }
+  .container { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+
+  /* Sticky nav */
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(250, 246, 238, 0.92);
+    backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding: 10px 16px;
+  }
+  .sticky-nav-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .sticky-nav-inner::-webkit-scrollbar { display: none; }
+  .sticky-nav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 11.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 4px 2px;
+    transition: color 0.2s;
+  }
+  .sticky-nav a:hover { color: var(--tk); }
+  @media (max-width: 540px) {
+    .sticky-nav-inner { gap: 18px; justify-content: flex-start; padding-left: 4px; }
+    .sticky-nav a { font-size: 11px; letter-spacing: 0.1em; }
+  }
+  .section-heading { scroll-margin-top: 60px; }
+
+  /* Bookings with clickable source screenshots (add data-img once booked) */
+  .flight-row[data-img] { cursor: pointer; transition: background 0.15s; }
+  .flight-row[data-img]:hover { background: rgba(0,0,0,0.02); }
+  .flight-row[data-img] .num strong::after { content: ' 📎'; font-size: 11px; opacity: 0.5; }
+
+  /* Lightbox modal */
+  .lightbox {
+    display: none; position: fixed; inset: 0;
+    background: rgba(31, 27, 22, 0.92); z-index: 100;
+    justify-content: center; align-items: center; padding: 20px; cursor: zoom-out;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 100%; max-height: 90vh; border-radius: 8px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+  .lightbox-caption {
+    position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+    color: #fff; font-family: 'Fraunces', serif; font-style: italic; font-size: 14px;
+    background: rgba(0,0,0,0.5); padding: 6px 14px; border-radius: 20px;
+  }
+  .lightbox-close {
+    position: absolute; top: 20px; right: 24px; color: #fff; font-size: 24px; cursor: pointer;
+    line-height: 1; padding: 6px 12px; border-radius: 50%; background: rgba(0,0,0,0.4);
+  }
+  .lightbox-missing { color: #FAF6EE; font-family: 'Fraunces', serif; font-size: 18px; text-align: center; max-width: 400px; line-height: 1.6; }
+  .lightbox-missing code { background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 13px; }
+
+  /* Calendar */
+  .calendar { margin-bottom: 48px; margin-left: -60px; margin-right: -60px; }
+  @media (max-width: 900px) { .calendar { margin-left: 0; margin-right: 0; } }
+  .cal-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .cal-day {
+    background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+    padding: 14px 12px 12px; min-height: 175px; display: flex; flex-direction: column; gap: 8px;
+    position: relative; overflow: hidden;
+  }
+  .cal-day.tk { border-top: 4px solid var(--tk); }
+  .cal-day.hk { border-top: 4px solid var(--hk); }
+  .cal-day.ky { border-top: 4px solid var(--ky); }
+  .cal-day.tr { border-top: 4px solid var(--tr); }
+  .cal-day-head { display: flex; align-items: baseline; justify-content: space-between; line-height: 1; }
+  .cal-date { font-family: 'Fraunces', serif; font-size: 28px; font-weight: 500; color: var(--ink); line-height: 1; }
+  .cal-num { font-size: 9px; color: var(--ink-muted); letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; }
+  .cal-place { font-size: 10px; color: var(--ink-muted); letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; margin-top: -2px; }
+  .cal-items { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
+  .cal-item { display: flex; align-items: flex-start; gap: 6px; font-size: 12.5px; color: var(--ink); line-height: 1.3; }
+  .cal-item-icon { flex-shrink: 0; font-size: 12px; line-height: 1.4; }
+  .cal-item-text { word-wrap: break-word; }
+  .cal-item.muted { color: var(--ink-soft); font-size: 11.5px; }
+  @media (max-width: 640px) {
+    .cal-grid { grid-template-columns: 1fr; gap: 10px; }
+    .cal-day { min-height: auto; padding: 16px 18px; border-top: 1px solid var(--line); border-left: 5px solid var(--line); gap: 10px; }
+    .cal-day.tk { border-left-color: var(--tk); border-top: 1px solid var(--line); }
+    .cal-day.hk { border-left-color: var(--hk); border-top: 1px solid var(--line); }
+    .cal-day.ky { border-left-color: var(--ky); border-top: 1px solid var(--line); }
+    .cal-day.tr { border-left-color: var(--tr); border-top: 1px solid var(--line); }
+    .cal-date { font-size: 24px; }
+    .cal-num { font-size: 10px; letter-spacing: 0.16em; }
+    .cal-place { font-size: 10.5px; letter-spacing: 0.16em; margin-top: 0; }
+    .cal-items { gap: 7px; margin-top: 2px; }
+    .cal-item { font-size: 14px; gap: 8px; line-height: 1.35; }
+    .cal-item.muted { font-size: 13px; }
+    .cal-item-icon { font-size: 14px; }
+  }
+
+  /* Hero */
+  .hero { text-align: center; padding: 40px 0 56px; border-bottom: 1px solid var(--line); margin-bottom: 48px; }
+  .eyebrow { font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 20px; font-weight: 500; }
+  .hero h1 {
+    font-family: 'Fraunces', serif; font-weight: 400; font-size: clamp(40px, 7vw, 64px);
+    line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 18px; font-style: italic;
+  }
+  .hero h1 em { font-style: normal; color: var(--tk); }
+  .hero .route { font-family: 'Fraunces', serif; font-size: 18px; color: var(--ink-soft); font-weight: 400; letter-spacing: 0.02em; }
+  .hero .route .dot { color: var(--ink-muted); margin: 0 4px; font-size: 10px; vertical-align: middle; }
+  .hero .dates { margin-top: 18px; font-size: 13px; color: var(--ink-muted); letter-spacing: 0.04em; }
+
+  /* Section heading */
+  .section-heading { font-family: 'Fraunces', serif; font-size: 24px; font-weight: 500; margin: 56px 0 8px; letter-spacing: -0.01em; }
+  .section-sub { font-size: 13px; color: var(--ink-muted); margin-bottom: 28px; letter-spacing: 0.02em; }
+
+  /* Rows table (flights, hotels, to-book, budget, watch-outs) */
+  .flights { background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; margin-bottom: 48px; }
+  .flight-row {
+    display: grid; grid-template-columns: 60px 1fr 140px; gap: 16px;
+    padding: 16px 20px; border-bottom: 1px solid var(--line); align-items: center;
+  }
+  .flight-row:last-child { border-bottom: none; }
+  .flight-row .num { font-family: 'Fraunces', serif; font-style: italic; font-size: 13px; color: var(--ink-muted); }
+  .flight-row .num strong { font-style: normal; font-weight: 500; color: var(--ink); font-size: 14px; display: block; }
+  .flight-row .route { font-size: 14px; }
+  .flight-row .route .cities { font-weight: 500; color: var(--ink); }
+  .flight-row .route .note { font-size: 12px; color: var(--ink-muted); margin-top: 2px; }
+  .flight-row .airports { font-family: 'Fraunces', serif; font-size: 13px; color: var(--ink-soft); text-align: right; letter-spacing: 0.04em; }
+  .flight-row.total { background: #F3EEE2; }
+  .flight-row.total .cities { font-family: 'Fraunces', serif; font-size: 16px; }
+  .flight-row.total .airports { font-size: 18px; color: var(--ink); }
+  @media (max-width: 540px) {
+    .flight-row { grid-template-columns: 1fr; gap: 4px; }
+    .flight-row .airports { text-align: left; }
+  }
+
+  /* Day cards */
+  .day {
+    background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+    padding: 24px 28px; margin-bottom: 14px; position: relative; overflow: hidden;
+  }
+  .day-image { width: calc(100% + 56px); margin: -24px -28px 20px; height: 240px; object-fit: cover; display: block; background: #E5DDC9; }
+  @media (max-width: 540px) { .day-image { height: 180px; } }
+  .day::before { content: ''; position: absolute; left: -1px; top: -1px; bottom: -1px; width: 4px; border-radius: 8px 0 0 8px; }
+  .day.tk::before { background: var(--tk); }
+  .day.hk::before { background: var(--hk); }
+  .day.ky::before { background: var(--ky); }
+  .day.tr::before { background: var(--tr); }
+
+  .day-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; gap: 12px; flex-wrap: wrap; }
+  .day-date { font-family: 'Fraunces', serif; font-style: italic; font-size: 13px; color: var(--ink-muted); letter-spacing: 0.02em; }
+  .booked { font-size: 10px; letter-spacing: 0.2em; background: #2D6A4F; color: #fff; padding: 4px 10px; border-radius: 4px; font-weight: 700; }
+  .pending { font-size: 10px; letter-spacing: 0.2em; background: #B5801E; color: #fff; padding: 4px 10px; border-radius: 4px; font-weight: 700; }
+  .ref { font-family: 'Fraunces', serif; font-style: italic; font-size: 12px; color: #2D6A4F; margin-top: 4px; letter-spacing: 0.04em; }
+  .day.booked-day { background: #FBFCF7; border-left: 4px solid #2D6A4F; }
+  .day.booked-day::before { width: 0; }
+  .day-place { font-family: 'Fraunces', serif; font-size: 26px; font-weight: 500; letter-spacing: -0.01em; margin: 4px 0 16px; line-height: 1.15; }
+
+  .day-section { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
+  .day-section:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+  .day-section-label { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-muted); font-weight: 600; margin-bottom: 6px; }
+  .day-section-items { font-size: 14.5px; color: var(--ink); line-height: 1.6; }
+  .day-section-items div { padding: 1px 0; }
+  .day-section-items .meta { color: var(--ink-soft); font-size: 13px; font-style: italic; }
+  .day-section-items a { color: var(--ky); text-decoration: none; border-bottom: 1px solid rgba(74,130,161,0.35); }
+  .day-section-items a:hover { border-bottom-color: var(--ky); }
+  .day-section-items .pick { color: var(--tk); font-weight: 500; }
+
+  /* Footer */
+  .footer { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--line); text-align: center; font-size: 12px; color: var(--ink-muted); letter-spacing: 0.02em; }
+  .footer em { font-family: 'Fraunces', serif; font-size: 14px; color: var(--ink-soft); }
+
+  /* Legend */
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; margin-bottom: 36px; font-size: 11px; color: var(--ink-muted); letter-spacing: 0.06em; text-transform: uppercase; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+</style>
+</head>
+<body>
+
+<nav class="sticky-nav">
+  <div class="sticky-nav-inner">
+    <a href="#flights">Flights</a>
+    <a href="#shape">Shape</a>
+    <a href="#calendar">Calendar</a>
+    <a href="#days">Days</a>
+    <a href="#hotels">Hotels</a>
+    <a href="#todo">To Book</a>
+    <a href="#budget">Budget</a>
+    <a href="#customs">Customs</a>
+    <a href="#prep">Prep</a>
+    <a href="#etiquette">Etiquette</a>
+    <a href="#watch">Watch-outs</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <header class="hero">
+    <div class="eyebrow">Itinerary · draft v1</div>
+    <h1>Tokyo, Hakone,<br/><em>Kyoto &amp; Nara</em></h1>
+    <div class="route">
+      Tokyo <span class="dot">●</span> Hakone <span class="dot">●</span> Kyoto <span class="dot">●</span> Nara <span class="dot">●</span> Tokyo
+    </div>
+    <div class="dates">Fly Thursday night, Oct 22 · land Saturday, Oct 24 · home Sunday, Nov 1, 2026 · 8 nights in Japan</div>
+  </header>
+
+  <div class="legend">
+    <span><i style="background:#C8616B"></i>Tokyo</span>
+    <span><i style="background:#4D8A78"></i>Hakone</span>
+    <span><i style="background:#4A82A1"></i>Kyoto &amp; Nara</span>
+    <span><i style="background:#8B8175"></i>Travel</span>
+  </div>
+
+  <!-- ===================== FLIGHTS ===================== -->
+  <h2 class="section-heading" id="flights">The flights</h2>
+  <p class="section-sub">✈️ American · LAX ↔ Haneda · nonstop both ways · $1,100 round trip (Basic Plus Bag)</p>
+
+  <div class="flights">
+    <div class="flight-row">
+      <div class="num"><strong>✈️</strong>Oct 23</div>
+      <div class="route">
+        <div class="cities">American · LAX → Tokyo Haneda (HND)</div>
+        <div class="note">Departs 12:40 AM <strong>Friday Oct 23</strong> (so you go to LAX Thursday night) · lands 4:45 AM Saturday Oct 24 · 12 hr 5 min nonstop</div>
+      </div>
+      <div class="airports">Not booked yet</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>✈️</strong>Nov 1</div>
+      <div class="route">
+        <div class="cities">American · Tokyo Haneda (HND) → LAX</div>
+        <div class="note">Departs 6:00 PM Sunday Nov 1 · lands 11:10 AM the same Sunday (dateline gives the day back) · 10 hr 10 min nonstop</div>
+      </div>
+      <div class="airports">Not booked yet</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>💲</strong>Fare</div>
+      <div class="route">
+        <div class="cities">Basic Plus Bag $1,100 · Main Cabin $1,360 · Main Plus $1,640</div>
+        <div class="note">Basic includes 1 carry-on + 1 checked bag, but <strong>no changes, no refunds, no miles</strong>, seat pick costs extra. Main Cabin ($260 more) gets free seat selection, free changes and miles. If there's any real chance the dates move, Main Cabin is the cheaper mistake. If they're locked, Basic is fine — the bag's already included.</div>
+      </div>
+      <div class="airports">Decide</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>✓</strong>Why these</div>
+      <div class="route">
+        <div class="cities">Haneda, not Narita · nonstop · Saturday-morning landing</div>
+        <div class="note">Haneda is the close-in airport (30 min to the city vs. 60–90 for Narita). Nonstop means you sleep through it. Landing at dawn on a Saturday gives you a full first day. The 6 PM return means a relaxed last morning, not a 5 AM alarm.</div>
+      </div>
+      <div class="airports"></div>
+    </div>
+  </div>
+
+  <!-- ===================== SHAPE ===================== -->
+  <h2 class="section-heading" id="shape">The shape of the trip</h2>
+  <p class="section-sub">Three bases, one direction, no backtracking until the last night</p>
+
+  <div class="day tr">
+    <div class="day-header">
+      <span class="day-date">8 nights · 3 Tokyo → 1 Hakone → 3 Kyoto → 1 Tokyo</span>
+    </div>
+    <div class="day-place">Land Saturday, go hard, then slow down.</div>
+    <div class="day-section">
+      <div class="day-section-label">The route</div>
+      <div class="day-section-items">
+        <div><strong>Tokyo · Sat–Mon (3 nights)</strong> — neon, food, Shibuya Sky at sunset, teamLab, Shinjuku nights. Two of the three days are a weekend; Tokyo is built for it.</div>
+        <div><strong>Hakone · Tue (1 night)</strong> — 35 minutes by bullet train from Tokyo. Ropeway over a volcano, pirate ship across Lake Ashi, the red torii in the water, a ryokan with hot-spring baths and a 10-course dinner. Best Mt. Fuji odds of the trip at sunrise.</div>
+        <div><strong>Kyoto · Wed–Fri (3 nights)</strong> — bullet train straight from Hakone's station (Odawara). Fushimi Inari at dawn, the Higashiyama temple walk, Gion at night, the bamboo grove, Golden Pavilion, a Nara deer morning.</div>
+        <div><strong>Tokyo · Sat (1 night)</strong> — train back Saturday evening so Sunday's 6 PM flight is a stroll from a hotel 15 minutes from Haneda.</div>
+        <div class="meta">Big suitcases get shipped Tokyo → Kyoto on Tuesday morning (¥2,500–3,000 a bag, arrives next day). You carry one overnight bag to Hakone. This is the single best logistics trick in Japan.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Real talk · fall color</div>
+      <div class="day-section-items">
+        <div>Late October is <strong>early</strong> for autumn leaves in Tokyo and Kyoto. The 2026 forecasts put Kyoto's ginkgo around Nov 27 and maples around Dec 11 — so the famous Kyoto red-maple photos won't be happening on this trip.</div>
+        <div>What you <em>do</em> get: crisp, mostly clear weather (the best Fuji-visibility season is just starting), first color in Hakone's high spots, golden pampas-grass fields at Sengokuhara, and the beginning of Kyoto's temple night light-ups (Kōdai-ji from ~Oct 23). Crowds are a notch below mid-November.</div>
+        <div class="meta">If leaves are the priority: swap Day 3 for a Nikkō day trip — the Oku-Nikkō lakes and waterfalls peak mid-to-late October. Details in Day 3, Option B.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Weather · late Oct</div>
+      <div class="day-section-items">
+        <div>Tokyo / Kyoto: highs ~65–70°F, lows ~52–57°F. Hakone runs ~10°F cooler, chilly at night. Sun sets early — about 4:55 PM in Tokyo, 5:05 PM in Kyoto — so plan outdoor things for mornings and lean into the night stuff.</div>
+        <div class="meta">A rainy day or two is normal. Typhoon season is basically over by late October, but not impossible — one more reason for travel insurance on a no-change fare.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== CALENDAR ===================== -->
+  <h2 class="section-heading" id="calendar">Calendar</h2>
+  <p class="section-sub">At a glance · ✈️ Flights · 🏨 Hotels · 🚄 Trains · 🎟️ Book ahead</p>
+
+  <div class="calendar">
+    <div class="cal-grid">
+      <div class="cal-day tr">
+        <div class="cal-day-head"><span class="cal-date">Oct 22</span><span class="cal-num">Thu</span></div>
+        <div class="cal-place">LAX · tonight</div>
+        <div class="cal-items">
+          <div class="cal-item"><span class="cal-item-icon">🚗</span><span class="cal-item-text">Leave for LAX ~9:30 PM</span></div>
+          <div class="cal-item muted"><span class="cal-item-icon">⚠️</span><span class="cal-item-text">Flight is 12:40 AM "Friday" — Thursday night at the airport</span></div>
+        </div>
+      </div>
+      <div class="cal-day tr">
+        <div class="cal-day-head"><span class="cal-date">23</span><span class="cal-num">Fri</span></div>
+        <div class="cal-place">In the air</div>
+        <div class="cal-items">
+          <div class="cal-item"><span class="cal-item-icon">✈️</span><span class="cal-item-text">LAX → HND · 12:40 AM · 12 hr 5 min</span></div>
+          <div class="cal-item muted"><span class="cal-item-icon">🌏</span><span class="cal-item-text">Cross the dateline · Friday disappears</span></div>
+        </div>
+      </div>
+      <div class="cal-day tk">
+        <div class="cal-day-head"><span class="cal-date">24</span><span class="cal-num">D1 · Sat</span></div>
+        <div class="cal-place">Tokyo · arrival</div>
+        <div class="cal-items">
+          <div class="cal-item"><span class="cal-item-icon">✈️</span><span class="cal-item-text">Land Haneda 4:45 AM</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🍣</span><span class="cal-item-text">Tsukiji market breakfast · Ginza</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🎟️</span><span class="cal-item-text">Shibuya Sky · sunset slot</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🏨</span><span class="cal-item-text">Tokyo hotel (Shibuya / Shinjuku)</span></div>
+        </div>
+      </div>
+      <div class="cal-day tk">
+        <div class="cal-day-head"><span class="cal-date">25</span><span class="cal-num">D2 · Sun</span></div>
+        <div class="cal-place">Tokyo · old east side</div>
+        <div class="cal-items">
+          <div class="cal-item"><span class="cal-item-icon">⛩️</span><span class="cal-item-text">Sensō-ji early · Yanaka</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🎟️</span><span class="cal-item-text">teamLab Planets · ~2 PM</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🍢</span><span class="cal-item-text">Shinjuku night · Omoide Yokocho</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🏨</span><span class="cal-item-text">Tokyo hotel</span></div>
+        </div>
+      </div>
+      <div class="cal-day tk">
+        <div class="cal-day-head"><span class="cal-date">26</span><span class="cal-num">D3 · Mon</span></div>
+        <div class="cal-place">Tokyo · pick your day</div>
+        <div class="cal-items">
+          <div class="cal-item"><span class="cal-item-icon">🌳</span><span class="cal-item-text">A: Meiji · Harajuku · Roppongi</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🍁</span><span class="cal-item-text">B: Nikkō leaf day trip</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🍽️</span><span class="cal-item-text">Shodai (Ebisu) dinner · reserve</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🏨</span><span class="cal-item-text">Tokyo hotel · pack 1 overnight bag</span></div>
+        </div>
+      </div>
+      <div class="cal-day hk">
+        <div class="cal-day-head"><span class="cal-date">27</span><span class="cal-num">D4 · Tue</span></div>
+        <div class="cal-place">Tokyo → Hakone</div>
+        <div class="cal-items">
+          <div class="cal-item"><span class="cal-item-icon">📦</span><span class="cal-item-text">Ship big bags to Kyoto (AM)</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🚄</span><span class="cal-item-text">Shinkansen → Odawara · Tozan rail to Gora</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🚠</span><span class="cal-item-text">Ropeway · black eggs · pirate ship · torii</span></div>
+          <div class="cal-item"><span class="cal-item-icon">♨️</span><span class="cal-item-text">Ryokan · onsen · kaiseki</span></div>
+        </div>
+      </div>
+      <div class="cal-day ky">
+        <div class="cal-day-head"><span class="cal-date">28</span><span class="cal-num">D5 · Wed</span></div>
+        <div class="cal-place">Hakone → Kyoto</div>
+        <div class="cal-items">
+          <div class="cal-item"><span class="cal-item-icon">🗻</span><span class="cal-item-text">Sunrise onsen · Fuji check</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🚄</span><span class="cal-item-text">Odawara → Kyoto · ~12:30 PM · 2 hr 10</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🏮</span><span class="cal-item-text">Pontocho · Gion at night</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🏨</span><span class="cal-item-text">Kyoto hotel (Gion / Kawaramachi)</span></div>
+        </div>
+      </div>
+      <div class="cal-day ky">
+        <div class="cal-day-head"><span class="cal-date">29</span><span class="cal-num">D6 · Thu</span></div>
+        <div class="cal-place">Kyoto · east side</div>
+        <div class="cal-items">
+          <div class="cal-item"><span class="cal-item-icon">⛩️</span><span class="cal-item-text">Fushimi Inari at 7 AM</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🏯</span><span class="cal-item-text">Kiyomizu → Sannenzaka → Yasaka Pagoda</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🍸</span><span class="cal-item-text">K36 sunset · Kōdai-ji light-up</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🏨</span><span class="cal-item-text">Kyoto hotel</span></div>
+        </div>
+      </div>
+      <div class="cal-day ky">
+        <div class="cal-day-head"><span class="cal-date">30</span><span class="cal-num">D7 · Fri</span></div>
+        <div class="cal-place">Kyoto · west side</div>
+        <div class="cal-items">
+          <div class="cal-item"><span class="cal-item-icon">🎋</span><span class="cal-item-text">Arashiyama bamboo by 8 AM</span></div>
+          <div class="cal-item"><span class="cal-item-icon">✨</span><span class="cal-item-text">Kinkaku-ji · Ryōan-ji</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🎟️</span><span class="cal-item-text">teamLab Biovortex or Nishiki + ramen</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🏨</span><span class="cal-item-text">Kyoto hotel · pack</span></div>
+        </div>
+      </div>
+      <div class="cal-day ky">
+        <div class="cal-day-head"><span class="cal-date">31</span><span class="cal-num">D8 · Sat</span></div>
+        <div class="cal-place">Nara → Tokyo</div>
+        <div class="cal-items">
+          <div class="cal-item"><span class="cal-item-icon">🦌</span><span class="cal-item-text">Nara deer · Tōdai-ji (AM)</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🚄</span><span class="cal-item-text">Kyoto → Tokyo · ~3:30 PM</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🎃</span><span class="cal-item-text">Halloween · skip Shibuya</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🏨</span><span class="cal-item-text">Tokyo · near Shinagawa / Haneda</span></div>
+        </div>
+      </div>
+      <div class="cal-day tr">
+        <div class="cal-day-head"><span class="cal-date">Nov 1</span><span class="cal-num">D9 · Sun</span></div>
+        <div class="cal-place">Home</div>
+        <div class="cal-items">
+          <div class="cal-item"><span class="cal-item-icon">🏨</span><span class="cal-item-text">Slow morning · checkout 11</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🚆</span><span class="cal-item-text">Keikyu to Haneda · there by 3 PM</span></div>
+          <div class="cal-item"><span class="cal-item-icon">✈️</span><span class="cal-item-text">HND 6:00 PM → LAX 11:10 AM</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== DAY BY DAY ===================== -->
+  <h2 class="section-heading" id="days">Day by day</h2>
+  <p class="section-sub">A menu, not a schedule — pick what fits, skip what doesn't. Grant's picks from his own trips are marked <span class="pick">★</span>.</p>
+
+  <!-- DAY 0 -->
+  <div class="day tr">
+    <div class="day-header">
+      <span class="day-date">Thursday, Oct 22 → Friday, Oct 23</span>
+      <span class="pending">Flight not booked</span>
+    </div>
+    <div class="day-place">Getting there</div>
+    <div class="day-section">
+      <div class="day-section-label">Thursday night</div>
+      <div class="day-section-items">
+        <div>Leave for LAX by ~9:30 PM Thursday. The ticket says <strong>Friday, Oct 23</strong> because departure is 12:40 AM — the easiest way to miss this flight is showing up Friday night.</div>
+        <div>Online check-in opens 24 hours before: Thursday, just after midnight. Do it then and pick seats if the fare allows.</div>
+        <div class="meta">Do Visit Japan Web (see Prep) before you leave — immigration becomes a QR scan.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">On the plane</div>
+      <div class="day-section-items">
+        <div>It's past midnight — sleep immediately, as long as you can. Skip the first meal if you have to.</div>
+        <div>Wake ~3 hours before landing. Eat, water, no booze. You land at 4:45 AM Saturday Tokyo time (12:45 PM Friday in LA).</div>
+        <div class="meta">Japan is 16 hours ahead of LA (PDT). The move is: stay awake until 9 PM local on Day 1 and you're fixed by Day 2.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="day tk">
+    <img class="day-image" src="https://images.unsplash.com/photo-1741920852881-5284c70305bd?w=1400&q=80&fm=jpg&auto=format&fit=crop" alt="Shibuya crossing at night">
+    <div class="day-header">
+      <span class="day-date">Saturday, Oct 24 · Day 1</span>
+    </div>
+    <div class="day-place">Tokyo · arrival</div>
+    <div class="day-section">
+      <div class="day-section-label">Flight</div>
+      <div class="day-section-items">
+        <div>American LAX → HND · land <strong>4:45 AM</strong> Saturday · 12 hr 5 min nonstop</div>
+        <div class="meta">Immigration at 5 AM is fast — nothing else is landing. Trains into the city start ~5:15–5:30 AM. Add a Suica card to Apple Wallet (iPhone: Wallet → + → Transit → Suica) or grab a Welcome Suica at the airport — tap on, tap off everything, including convenience stores.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">5–9 AM · the hotel won't have a room till 3 PM</div>
+      <div class="day-section-items">
+        <div><strong>Option A (best):</strong> book the hotel for the night of Oct 23 too and check in at 6 AM. One extra night buys a shower, a 2-hour nap and a real Day 1.</div>
+        <div><strong>Option B:</strong> soak at the Haneda Terminal 3 hot spring (Izumi Tenkū no Yu, on top of the Villa Fontaine Grand hotel, right in the terminal) — bath, shower, breakfast, then into the city around 8.</div>
+        <div><strong>Option C:</strong> drop bags at the hotel front desk and go straight to Tsukiji. Every hotel holds bags before check-in.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Morning</div>
+      <div class="day-section-items">
+        <div><span class="pick">★</span> <strong>Tsukiji Outer Market</strong> — sushi breakfast, tamago on a stick, wagyu skewers, strawberry daifuku. Stalls run ~7 AM–2 PM. Graze 6–8 stalls instead of one meal.</div>
+        <div><strong>Hamarikyū Gardens</strong> (opens 9 AM, ¥300) — a 17th-century shogun's garden ringed by skyscrapers, teahouse on the pond. Easy on airplane legs, 10 min walk from Tsukiji.</div>
+        <div class="meta">Ginza is next door — Itoya (stationery heaven), Ginza Six, the Mitsukoshi basement food hall.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Afternoon</div>
+      <div class="day-section-items">
+        <div>Check in at 3 PM. Nap — <strong>90 minutes max</strong>, alarm set, curtains open after.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Evening</div>
+      <div class="day-section-items">
+        <div><strong>Shibuya Sky at sunset</strong> — sunset is ~4:55 PM, so book the 4:00–4:20 PM entry online (~¥2,700). Sunset slots sell out weeks ahead. Open-air rooftop over the whole city, Fuji on a clear day.</div>
+        <div><strong>Shibuya Scramble Crossing</strong> on the way out — cross it, then watch it from the Starbucks or the Shibuya Station walkway.</div>
+        <div>Dinner, both <span class="pick">★</span> Grant picks, both walk-in: <strong>Gyukatsu Katsugyu</strong> (breaded beef cutlet you finish on a hot stone, Dogenzaka, 15–30 min line) or <strong>Katsudon-ya Zuichō</strong> (tiny katsudon counter, 30–45 min line, worth it).</div>
+        <div class="meta">Saturday-night Shibuya is loud and fun. In bed by 10. Tomorrow starts early.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Sleep</div>
+      <div class="day-section-items">
+        <div>Tokyo hotel · Shibuya or Shinjuku base · nights of Oct 24, 25, 26 (see <a href="#hotels">Where you sleep</a>)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day tk">
+    <div class="day-header">
+      <span class="day-date">Sunday, Oct 25 · Day 2</span>
+    </div>
+    <div class="day-place">Tokyo · old east side + teamLab</div>
+    <div class="day-section">
+      <div class="day-section-label">Morning</div>
+      <div class="day-section-items">
+        <div><strong>Sensō-ji by 7:30 AM</strong> — Tokyo's oldest temple (645 AD). Kaminarimon gate, the Nakamise street before the stalls open. The tour groups land at 10; you'll have it to yourselves.</div>
+        <div><strong>Yanaka</strong> — one of the few old neighborhoods that survived the war. Yanaka Ginza shopping street, narrow lanes, cats. <span class="pick">★</span> <strong>Hagiso</strong> café (a restored 1955 wooden townhouse) for a late breakfast — Grant's favorite.</div>
+        <div class="meta">Lunch if you linger in Asakusa: Asakusa Imahan (130-year-old sukiyaki) or Sometarō (cook-your-own okonomiyaki).</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Afternoon</div>
+      <div class="day-section-items">
+        <div><strong>teamLab Planets, Toyosu</strong> — book a ~2 PM slot now; Sundays sell out (~¥3,800–4,800). Barefoot through water rooms and mirrored infinity spaces. Wear shorts or pants you can roll up.</div>
+        <div class="meta">90 min–2 hrs inside. Toyosu Senkyaku Banrai next door is an Edo-style food street with a rooftop foot bath if you want a snack after.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Evening · Shinjuku</div>
+      <div class="day-section-items">
+        <div><strong>Tokyo Metropolitan Government Building</strong> — free observation deck on the 45th floor, open till ~10 PM. There's a projection-mapping show on the building's face most nights after dark; check times.</div>
+        <div><strong>Omoide Yokochō</strong> ("Memory Lane") — smoky alley of 8-seat yakitori counters by the station. Cash. Point at what you want.</div>
+        <div><strong>Golden Gai</strong> — 200 tiny bars, 6 seats each. Look for "no cover charge" signs on the door; order one drink per person, move on.</div>
+        <div class="meta"><span class="pick">★</span> Ichiran Shinjuku (solo-booth tonkotsu ramen, 24 hours) if you want the easy classic on the way home.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Sleep</div>
+      <div class="day-section-items">
+        <div>Same Tokyo hotel</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day tk">
+    <img class="day-image" src="https://images.unsplash.com/photo-1480796927426-f609979314bd?w=1400&q=80&fm=jpg&auto=format&fit=crop" alt="Tokyo shopfront">
+    <div class="day-header">
+      <span class="day-date">Monday, Oct 26 · Day 3</span>
+    </div>
+    <div class="day-place">Tokyo · pick your day</div>
+    <div class="day-section">
+      <div class="day-section-label">Option A · west Tokyo (the classic)</div>
+      <div class="day-section-items">
+        <div><strong>Meiji Jingū at opening</strong> (sunrise, ~6 AM) — a forest shrine in the middle of the city, the wall of sake barrels, gravel paths with nobody on them.</div>
+        <div><strong>Harajuku + Omotesandō</strong> — Takeshita Street chaos, then the tree-lined boulevard. <span class="pick">★</span> Samoyed Café moffu if you want to pet a giant cloud of a dog (reserve online weeks ahead).</div>
+        <div>Lunch: <strong>Tonkatsu Maisen Aoyama</strong> (kuro-buta black pork, walk-in).</div>
+        <div>Afternoon: <strong>Roppongi</strong> — Mori Art Museum + Sky Deck (open Mondays), or <strong>Tokyo Tower at sunset</strong> with Zōjō-ji temple framed in front.</div>
+        <div>Dinner: <span class="pick">★</span> <strong>Shodai, Ebisu</strong> — Grant's must-have. ~14 counter seats, modern kappo, the signature wagyu beef udon with potato foam. Reserve ahead. Backup: Yakiniku Jambo Hannare (A5 wagyu you grill yourself; book ~1 month out).</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Option B · Nikkō day trip (if fall color is the priority)</div>
+      <div class="day-section-items">
+        <div>Tobu limited express from Asakusa ~7:30 AM, ~2 hours (book seats online). <strong>Oku-Nikkō</strong>: the Irohazaka hairpin road, Kegon Falls (100 m), Lake Chūzenji, Ryūzu Falls — this is the zone that peaks mid-to-late October.</div>
+        <div><strong>Tōshō-gū</strong> on the way back — the shogun Ieyasu's over-the-top gilded mausoleum (¥1,600). Back in Tokyo ~7 PM.</div>
+        <div class="meta">Monday means far fewer people than the weekend crush, but buses up Irohazaka still jam on peak-leaf days — leave early. If you do this, move Shodai dinner to Day 1 or 2.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Tonight · pack for Hakone</div>
+      <div class="day-section-items">
+        <div>One overnight bag each. Everything else gets shipped to Kyoto tomorrow morning.</div>
+        <div class="meta">Ask the front desk tonight about Yamato luggage forwarding ("takkyubin") so the morning is quick. They'll fill out the form; you pay ~¥2,500–3,000 per bag.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Sleep</div>
+      <div class="day-section-items">
+        <div>Tokyo hotel · last night here</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day hk">
+    <img class="day-image" src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=1400&q=80&fm=jpg&auto=format&fit=crop" alt="Mt. Fuji with a pagoda in the foreground">
+    <div class="day-header">
+      <span class="day-date">Tuesday, Oct 27 · Day 4</span>
+    </div>
+    <div class="day-place">Tokyo → Hakone</div>
+    <div class="day-section">
+      <div class="day-section-label">Morning</div>
+      <div class="day-section-items">
+        <div><strong>Ship the big suitcases</strong> to the Kyoto hotel from the front desk (Yamato, ~¥2,500–3,000 per bag, arrives tomorrow; the hotel holds them).</div>
+        <div><strong>Shinkansen Tokyo → Odawara</strong>, ~10 AM — Kodama or Hikari, 33–35 min. Book on the Smart-EX app (seats went on sale a month out — they're open now).</div>
+        <div class="meta">Grab an ekiben (train bento) in Tokyo Station's basement. At Odawara, buy the <strong>Hakone Free Pass</strong> (2-day, ~¥5,000 from Odawara) — covers the mountain railway, cable car, ropeway, pirate ship and buses.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Midday</div>
+      <div class="day-section-items">
+        <div><strong>Hakone Tozan Railway</strong> Odawara → Gōra — a switchback mountain train, ~55 min with a change at Hakone-Yumoto. Drop the overnight bag at the ryokan (check-in is usually 3 PM; they'll hold it).</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Afternoon · the Hakone loop</div>
+      <div class="day-section-items">
+        <div>Gōra → cable car up to Sōunzan → <span class="pick">★</span> <strong>Hakone Ropeway over Ōwakudani</strong> — gondola over an active volcanic valley, sulfur steam, Fuji from the cabin on a clear day. At the top: <strong>kuro-tamago</strong>, eggs boiled black in the hot springs ("each one adds 7 years").</div>
+        <div>Ropeway down to Tōgendai → <span class="pick">★</span> <strong>pirate ship across Lake Ashi</strong> (35 min, camp as it sounds, great) → Moto-Hakone: <strong>Hakone Shrine's red torii standing in the lake</strong>. Bus back to Gōra.</div>
+        <div class="meta">~4–5 hours total. Check Ropeway status in the morning — it closes when volcanic gas spikes (buses substitute). If you have a spare hour: <strong>Sengokuhara pampas grass fields</strong> turn gold in late October — bus from Tōgendai.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Evening</div>
+      <div class="day-section-items">
+        <div><strong>Onsen before dinner.</strong> Rinse at the washing stations first, no swimsuit, small towel stays out of the water. Yukata robe for dinner.</div>
+        <div><strong>Kaiseki dinner</strong> at the ryokan — 10+ small seasonal courses, included. Say yes to everything once.</div>
+        <div class="meta">Tattoos: most public baths still ban them. Pick a ryokan with private or in-room baths if either of you has ink (see Hotels). Early night; set an alarm for a sunrise bath.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Sleep</div>
+      <div class="day-section-items">
+        <div>Hakone ryokan · Gōra or Hakone-Yumoto · night of Oct 27 (see <a href="#hotels">Where you sleep</a>)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="day ky">
+    <img class="day-image" src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1400&q=80&fm=jpg&auto=format&fit=crop" alt="Higashiyama street with Yasaka Pagoda, Kyoto">
+    <div class="day-header">
+      <span class="day-date">Wednesday, Oct 28 · Day 5</span>
+    </div>
+    <div class="day-place">Hakone → Kyoto</div>
+    <div class="day-section">
+      <div class="day-section-label">Morning</div>
+      <div class="day-section-items">
+        <div><strong>Sunrise onsen.</strong> The clearest Fuji window of the day is sunrise to ~9 AM. If the mountain is out, drop everything and look.</div>
+        <div>Ryokan breakfast (included) — miso soup, grilled fish, rolled omelet, rice, pickles.</div>
+        <div><strong>Hakone Open-Air Museum</strong> (opens 9, ¥2,000) — sculptures across a hillside, a Picasso pavilion, a hot-spring foot bath. 5-min walk from Gōra.</div>
+        <div class="meta">Or skip it and sleep in. This is the one lazy morning of the trip.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Transit</div>
+      <div class="day-section-items">
+        <div>Tozan railway down to Odawara (~1 hr with the change) · <strong>Hikari Shinkansen Odawara → Kyoto</strong> ~12:30 PM, ~2 hr 10 min. (The fastest Nozomi trains don't stop at Odawara — Hikari is the one.)</div>
+        <div class="meta">Smart-EX again. The suitcases you shipped yesterday are waiting at the Kyoto hotel.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Afternoon</div>
+      <div class="day-section-items">
+        <div>Check in ~3 PM. <span class="pick">★</span> <strong>Nishiki Market</strong> while there's daylight (closes ~6 PM) — five blocks of stalls: yuba, dashimaki tamago, wagyu skewers, soy-milk donuts. Graze instead of a sit-down dinner.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Evening</div>
+      <div class="day-section-items">
+        <div><strong>Pontochō</strong> lantern alley and the Kamo River at dusk (sunset ~5:05 PM). The most cinematic 10 minutes in Kyoto.</div>
+        <div>Dinner: <strong>Mishima-tei</strong> (150-year-old sukiyaki house in Sanjō; reserve) or <strong>Chao Chao Gyoza</strong> (12-seat counter, crispy-bottom gyoza, cheap, cash).</div>
+        <div><strong>Gion at night</strong> — Hanami-kōji street. If you see a geiko or maiko, don't chase for photos; the ward now fines it on some private lanes.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Sleep</div>
+      <div class="day-section-items">
+        <div>Kyoto hotel · Gion / Kawaramachi / Higashiyama base · nights of Oct 28, 29, 30 (see <a href="#hotels">Where you sleep</a>)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 6 -->
+  <div class="day ky">
+    <img class="day-image" src="https://images.unsplash.com/photo-1570692890937-f60db72ac6b4?w=1400&q=80&fm=jpg&auto=format&fit=crop" alt="Fushimi Inari torii gates, Kyoto">
+    <div class="day-header">
+      <span class="day-date">Thursday, Oct 29 · Day 6</span>
+    </div>
+    <div class="day-place">Kyoto · the east side</div>
+    <div class="day-section">
+      <div class="day-section-label">Dawn</div>
+      <div class="day-section-items">
+        <div><strong>Fushimi Inari at 7 AM</strong> (free, open 24 hours) — the tunnel of 10,000 vermilion torii climbing the mountain. Empty at 7, a conga line by 10. Walk up to the Yotsutsuji viewpoint (~45 min) and turn around.</div>
+        <div class="meta">JR Nara Line from Kyoto Station, 2 stops, 5 min. Eat a conbini onigiri on the platform.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Late morning · the Higashiyama walk</div>
+      <div class="day-section-items">
+        <div><strong>Kiyomizu-dera</strong> (¥500) — the big wooden stage hanging over the hillside. Then downhill: <strong>Sannenzaka → Ninenzaka</strong> stone lanes → <strong>Yasaka Pagoda</strong> (Hōkan-ji) — the Kyoto street shot everyone has.</div>
+        <div>Snack crawl on the way: Maccha House (matcha soft serve), Totaro (warabimochi). Lunch: <strong>Yamamoto Menzou</strong> (handmade udon, there's a line) or <strong>Kyoto Tonkatsu Katsuda</strong> near Pontochō.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Afternoon</div>
+      <div class="day-section-items">
+        <div>Yasaka Shrine → Maruyama Park → Chion-in's giant gate. Then <strong>rest at the hotel 3–4 PM</strong> — tonight runs late.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Sunset</div>
+      <div class="day-section-items">
+        <div><span class="pick">★</span> <strong>K36 The Bar &amp; Rooftop</strong> (top of Hotel Seiryu, directly across from Yasaka Pagoda) — Grant's pick for sunset cocktails in Kyoto. Reserve, or be there by 4:30.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Night</div>
+      <div class="day-section-items">
+        <div><strong>Kōdai-ji autumn illumination</strong> — lit bamboo grove, a mirrored pond, projection on the raked gravel. The 2026 run is listed as Oct 23 – Dec 13, ~¥600, till ~10 PM. It's a 5-min walk from K36.</div>
+        <div>Dinner after, in Gion: <strong>Gion Karyō</strong> (kaiseki in an old machiya house; reserve ~2 weeks out) or <span class="pick">★</span> <strong>Menbaka Fire Ramen</strong> (they pour flaming oil into your bowl; silly and good).</div>
+        <div class="meta">Confirm Kōdai-ji's dates on the temple's site before you go — the 2026 window was still provisional when this was written.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Sleep</div>
+      <div class="day-section-items">
+        <div>Kyoto hotel</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 7 -->
+  <div class="day ky">
+    <img class="day-image" src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=1400&q=80&fm=jpg&auto=format&fit=crop" alt="Kyoto pagoda at sunset">
+    <div class="day-header">
+      <span class="day-date">Friday, Oct 30 · Day 7</span>
+    </div>
+    <div class="day-place">Kyoto · the west side</div>
+    <div class="day-section">
+      <div class="day-section-label">Early</div>
+      <div class="day-section-items">
+        <div><strong>Arashiyama Bamboo Grove by 8 AM</strong> (free). It's a 10-minute path — be there before the tour buses or it's a 10-minute path with 2,000 people on it.</div>
+        <div><strong>Tenryū-ji</strong> garden (¥500, opens 8:30) backs straight onto the grove. Then Togetsukyō Bridge and the river.</div>
+        <div class="meta">JR Sagano Line from Kyoto Station to Saga-Arashiyama, 15 min. Optional: Iwatayama Monkey Park (steep 20-min climb, macaques + city view). Optional: the <strong>Sagano Romantic Train + Hozugawa boat</strong> down the gorge — Mom &amp; Dad's favorite day — but the gorge is only starting to turn in late October. Book it for the ride, not the color.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Lunch</div>
+      <div class="day-section-items">
+        <div><strong>Yoshimura</strong> (soba with a bridge view) or <strong>Shōraian</strong> (yudofu — Buddhist tofu cuisine — in a house above the river; reserve).</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Afternoon</div>
+      <div class="day-section-items">
+        <div><span class="pick">★</span> <strong>Kinkaku-ji</strong>, the Golden Pavilion (¥500) — taxi or bus from Arashiyama, ~30 min. Gold leaf on a mirror pond; 45 minutes is plenty.</div>
+        <div><strong>Ryōan-ji</strong> rock garden is a 15-min walk away if you want the quiet counterpoint.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Evening · pick one</div>
+      <div class="day-section-items">
+        <div><strong>teamLab Biovortex Kyoto</strong> — the biggest teamLab in Japan, 7-min walk from Kyoto Station. Book a slot; Grant did 4 PM and it was the right call.</div>
+        <div>Or: Nishiki Market if you missed it + <span class="pick">★</span> <strong>Yukichi Honpo</strong> (refined Kyoto chicken-broth ramen, Grant's Kyoto ramen pick) + one more Pontochō walk.</div>
+        <div class="meta">Pack tonight. Tomorrow is Nara in the morning and a train to Tokyo in the afternoon.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Sleep</div>
+      <div class="day-section-items">
+        <div>Kyoto hotel · last night here</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 8 -->
+  <div class="day tk">
+    <img class="day-image" src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=1400&q=80&fm=jpg&auto=format&fit=crop" alt="Shinjuku neon at night">
+    <div class="day-header">
+      <span class="day-date">Saturday, Oct 31 · Day 8 · Halloween</span>
+    </div>
+    <div class="day-place">Nara → Tokyo</div>
+    <div class="day-section">
+      <div class="day-section-label">Morning · Nara</div>
+      <div class="day-section-items">
+        <div>Check out, leave bags at the hotel desk. <strong>Kintetsu express Kyoto → Kintetsu-Nara</strong>, ~35–45 min (~¥760, or ~¥1,300 for the reserved limited express).</div>
+        <div><strong>Nara Park</strong> — 1,000+ bowing deer (¥200 for crackers; they will mob you). <strong>Tōdai-ji</strong>'s Great Buddha (15 m of bronze, ¥800). <strong>Kasuga Taisha</strong> and its 3,000 lanterns.</div>
+        <div class="meta">3–4 hours is plenty. Catch the mochi-pounding show at Nakatanidō on the main street near the station.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Afternoon · back to Tokyo</div>
+      <div class="day-section-items">
+        <div>Back in Kyoto by ~2:30, collect bags. <strong>Nozomi Shinkansen Kyoto → Tokyo ~3:30 PM</strong>, 2 hr 15 min (Smart-EX). Bags under 160 cm total go overhead — no need to ship for one night.</div>
+        <div>Arrive Tokyo ~5:45 PM. Yamanote/Keikyu or a taxi to the last hotel near Shinagawa / Takanawa.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Night · it's Halloween on a Saturday</div>
+      <div class="day-section-items">
+        <div><strong>Skip Shibuya.</strong> The ward bans street drinking in the station area 6 PM–5 AM, fences off the Hachikō statue, floods the crossing with police and literally asks people not to come. It's a crush, not a party.</div>
+        <div>Do instead: <strong>Tokyo Tower lit up + Zōjō-ji</strong> (close to the Shinagawa side), a farewell <strong>yakiniku</strong> dinner (Yakiniku Jambo if you got the booking, or Shabuzen Roppongi for wagyu shabu-shabu), or Shinjuku's Omoide Yokochō / Golden Gai if you still have gas.</div>
+        <div class="meta"><strong>Swap option:</strong> stay in Kansai tonight — Osaka's Dōtonbori on Halloween Saturday is the wilder scene, 15 min from Kyoto by Shinkansen — then take a 7–8 AM bullet train Sunday (Shin-Osaka → Tokyo 2.5 hrs, Tokyo Station → Haneda 30 min). It works, but it's a hungover travel morning before a 10-hour flight.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Sleep</div>
+      <div class="day-section-items">
+        <div>Tokyo · last night · near Shinagawa / Takanawa, or at Haneda itself (see <a href="#hotels">Where you sleep</a>)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 9 -->
+  <div class="day tr">
+    <div class="day-header">
+      <span class="day-date">Sunday, Nov 1 · Day 9</span>
+    </div>
+    <div class="day-place">Home</div>
+    <div class="day-section">
+      <div class="day-section-label">Morning</div>
+      <div class="day-section-items">
+        <div>Slow one. Checkout by 11 (ask for late checkout when you arrive).</div>
+        <div>Last picks: <strong>Sengakuji</strong> (graves of the 47 rōnin, 10 min from Takanawa), <strong>Tsukiji</strong> if you missed it on Day 1, or Ginza's Mitsukoshi basement for edible gifts.</div>
+        <div class="meta">Tax-free at bigger stores with your passport, ¥5,000+. KitKats and snacks are fine to bring home; fresh fruit and meat are not (see Customs).</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Transit</div>
+      <div class="day-section-items">
+        <div><strong>Keikyu line</strong> from Shinagawa to Haneda Terminal 3, ~15 min. Be at Haneda by <strong>3 PM</strong> for the 6 PM international departure.</div>
+        <div class="meta">Terminal 3 has a good food floor (Edo Koji) and the Day 1 hot spring if you want one last soak before 10 hours in a seat.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Flight</div>
+      <div class="day-section-items">
+        <div>American HND → LAX · <strong>6:00 PM Nov 1 → 11:10 AM Nov 1</strong> · 10 hr 10 min. You land before you took off.</div>
+        <div class="meta">Mobile Passport Control app at LAX skips the kiosk line. Sleep the second half of the flight to land in LA-morning mode.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== HOTELS ===================== -->
+  <h2 class="section-heading" id="hotels">Where you sleep</h2>
+  <p class="section-sub">Four stays, none booked yet · suggestions by tier, 2 sharing · book free-cancellation rates</p>
+
+  <div class="flights">
+    <div class="flight-row">
+      <div class="num"><strong>1–3</strong>Oct 24–26</div>
+      <div class="route">
+        <div class="cities">Tokyo · 3 nights · base in Shibuya or Shinjuku</div>
+        <div class="note">
+          Mid (~¥25–35k/night): <strong>sequence MIYASHITA PARK</strong> (Shibuya, rooftop, design-y) · <strong>Hotel Gracery Shinjuku</strong> (the Godzilla-head one, in the middle of Kabukichō) ·
+          Value (~¥15–22k): <strong>Dormy Inn Premium Shibuya Jingumae</strong> (rooftop bath + free late-night ramen) ·
+          Splurge (~¥50k+): <strong>Shibuya Stream Excel Hotel Tokyu</strong> (over the station).
+          <br>Add the night of Oct 23 if you want to check in at dawn (Day 1, Option A).
+        </div>
+      </div>
+      <div class="airports">Not booked</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>4</strong>Oct 27</div>
+      <div class="route">
+        <div class="cities">Hakone · 1 night · ryokan with dinner + breakfast</div>
+        <div class="note">
+          Splurge (~¥40–60k per person incl. meals): <strong>Hakone Gōra KARAKU</strong> — where Mom &amp; Dad stayed; private open-air bath on every balcony, 2 min from Gōra station ·
+          Mid (~¥30–45k pp): <strong>Hakone Kowakien Ten-yu</strong> (big open-air baths, buffet or kaiseki) ·
+          Value (~¥8–12k pp, no meals): <strong>Hakone Tent</strong> (guesthouse in Gōra with its own onsen; eat soba at Hatsuhana).
+          <br>Book this one first — late October is leaf season and the good ones go. If anyone has tattoos, choose private/in-room baths.
+        </div>
+      </div>
+      <div class="airports">Not booked</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>5–7</strong>Oct 28–30</div>
+      <div class="route">
+        <div class="cities">Kyoto · 3 nights · base in Gion / Kawaramachi / Higashiyama</div>
+        <div class="note">
+          Mid (~¥25–40k/night): <strong>OMO5 Kyoto Gion</strong> (Hoshino Resorts, steps from Yasaka Shrine) · <strong>Cross Hotel Kyoto</strong> (Kawaramachi, walk to Pontochō and Nishiki) ·
+          Value (~¥12–20k): <strong>Piece Hostel Sanjo</strong> private rooms ·
+          Splurge (~¥60k+): <strong>Hotel Seiryu Kyoto Kiyomizu</strong> (converted 1930s school in Higashiyama; K36 is the rooftop bar).
+          <br>Ship the suitcases here from Tokyo on Oct 27 — tell them a Yamato delivery is coming.
+        </div>
+      </div>
+      <div class="airports">Not booked</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>8</strong>Oct 31</div>
+      <div class="route">
+        <div class="cities">Tokyo · 1 night · close to Haneda</div>
+        <div class="note">
+          Mid (~¥18–30k): <strong>Shinagawa Prince Hotel</strong> or <strong>Keikyu EX Inn Shinagawa-Ekimae</strong> — Keikyu direct to Haneda in ~15 min ·
+          Easiest (~¥25–35k): <strong>Villa Fontaine Grand Haneda Airport</strong> — inside Terminal 3 with the hot spring upstairs; walk to check-in ·
+          Splurge: <strong>JW Marriott Hotel Tokyo</strong> (Takanawa Gateway) — where Mom &amp; Dad ended their trip.
+        </div>
+      </div>
+      <div class="airports">Not booked</div>
+    </div>
+  </div>
+
+  <!-- ===================== TO BOOK ===================== -->
+  <h2 class="section-heading" id="todo">Still to book</h2>
+  <p class="section-sub">In priority order · everything above the line should happen this week</p>
+
+  <div class="flights">
+    <div class="flight-row">
+      <div class="num"><strong>1.</strong>Now</div>
+      <div class="route">
+        <div class="cities">Flights · American LAX ↔ HND</div>
+        <div class="note">Oct 23 12:40 AM out · Nov 1 6:00 PM back · decide Basic Plus Bag ($1,100) vs Main Cabin ($1,360) — see the fare note up top</div>
+      </div>
+      <div class="airports">Book</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>2.</strong>Now</div>
+      <div class="route">
+        <div class="cities">Hakone ryokan · Oct 27 · 1 night with meals</div>
+        <div class="note">Leaf season — the good ones sell out first. Request private bath if tattoos. Mention any food allergies at booking (kaiseki is set-menu)</div>
+      </div>
+      <div class="airports">Book</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>3.</strong>Now</div>
+      <div class="route">
+        <div class="cities">Hotels · Tokyo ×3 (Oct 24–26) · Kyoto ×3 (Oct 28–30) · Tokyo ×1 (Oct 31)</div>
+        <div class="note">Free-cancellation rates on Booking.com / Expedia / direct. Add Oct 23 in Tokyo if you want the 6 AM check-in</div>
+      </div>
+      <div class="airports">Book</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>4.</strong>Now</div>
+      <div class="route">
+        <div class="cities">Shibuya Sky · Sat Oct 24 · ~4:00 PM sunset slot</div>
+        <div class="note">Official site or Klook · sunset slots sell out weeks ahead · ~¥2,700</div>
+      </div>
+      <div class="airports">Book</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>5.</strong>Now</div>
+      <div class="route">
+        <div class="cities">teamLab Planets · Sun Oct 25 · ~2:00 PM slot</div>
+        <div class="note">Official site · Sundays sell out · ~¥3,800–4,800</div>
+      </div>
+      <div class="airports">Book</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>6.</strong>Now</div>
+      <div class="route">
+        <div class="cities">Shinkansen ×3 on the Smart-EX app</div>
+        <div class="note">Oct 27 Tokyo → Odawara ~10 AM (Kodama/Hikari) · Oct 28 Odawara → Kyoto ~12:30 PM (Hikari) · Oct 31 Kyoto → Tokyo ~3:30 PM (Nozomi) · seats open 1 month out, so all three are bookable today · register your Suica or a credit card for ticketless boarding</div>
+      </div>
+      <div class="airports">Book</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>7.</strong>~Oct 12–19</div>
+      <div class="route">
+        <div class="cities">Dinner reservations</div>
+        <div class="note">Shodai Ebisu (Oct 26) · Mishima-tei (Oct 28) · K36 sunset (Oct 29) · Gion Karyō (Oct 29) · Yakiniku Jambo needs ~1 month, so try now · most take TableCheck / hotel concierge / a phone call</div>
+      </div>
+      <div class="airports">Reserve</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>8.</strong>Optional</div>
+      <div class="route">
+        <div class="cities">Nice-to-haves</div>
+        <div class="note">Nikkō Tobu express seats (if Day 3 Option B) · teamLab Biovortex Kyoto (Oct 30) · Sagano Romantic Train + Hozugawa boat (Oct 30) · Samoyed Café moffu (Oct 26) · Ghibli Museum is almost certainly sold out for these dates (tickets drop the 10th of the prior month) — skip it</div>
+      </div>
+      <div class="airports">If wanted</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>9.</strong>On arrival</div>
+      <div class="route">
+        <div class="cities">Not bookable ahead — just do it there</div>
+        <div class="note">Suica in Apple Wallet (or Welcome Suica at Haneda) · Hakone Free Pass at Odawara station · Yamato luggage forwarding at the Tokyo hotel desk Oct 27 AM · Kōdai-ji light-up (walk up) · Fushimi Inari, Nara, Arashiyama (no tickets)</div>
+      </div>
+      <div class="airports">There</div>
+    </div>
+  </div>
+
+  <!-- ===================== BUDGET ===================== -->
+  <h2 class="section-heading" id="budget">The numbers, honest</h2>
+  <p class="section-sub">Per person, two sharing rooms · mid-range, not backpacker, not luxury · assumes ~¥150 to the dollar — check the rate when you book</p>
+
+  <div class="flights">
+    <div class="flight-row">
+      <div class="num"><strong>✈️</strong></div>
+      <div class="route">
+        <div class="cities">Flights · LAX ↔ HND nonstop</div>
+        <div class="note">Basic Plus Bag · add $260 for Main Cabin</div>
+      </div>
+      <div class="airports">$1,100</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>🏨</strong></div>
+      <div class="route">
+        <div class="cities">Lodging · 8 nights, split two ways</div>
+        <div class="note">Tokyo ×4 and Kyoto ×3 at ~¥25–35k/night shared + one ryokan night with two meals at ~¥35–45k per person</div>
+      </div>
+      <div class="airports">~$1,100</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>🚄</strong></div>
+      <div class="route">
+        <div class="cities">Trains &amp; transit</div>
+        <div class="note">Three Shinkansen legs (~¥30k) + Hakone Free Pass (~¥5k) + Nara (~¥1.5k) + subways, airport trains (~¥10k)</div>
+      </div>
+      <div class="airports">~$310</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>🎟️</strong></div>
+      <div class="route">
+        <div class="cities">Tickets &amp; temples</div>
+        <div class="note">teamLab, Shibuya Sky, Open-Air Museum, Kiyomizu, Kōdai-ji, Kinkaku-ji, Tenryū-ji, Tōdai-ji, Hakone extras</div>
+      </div>
+      <div class="airports">~$100</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>🍜</strong></div>
+      <div class="route">
+        <div class="cities">Food &amp; drink</div>
+        <div class="note">~¥10–12k/day × 8 days (the ryokan covers one dinner + breakfast) · ramen is ¥1,200, a good dinner ¥5–8k, Shodai or kaiseki ¥15k+</div>
+      </div>
+      <div class="airports">~$650</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>📱</strong></div>
+      <div class="route">
+        <div class="cities">eSIM, travel insurance, buffer</div>
+        <div class="note">eSIM ~$20 · insurance ~$60–100 (worth it on a no-change fare) · "because something always" ~$200</div>
+      </div>
+      <div class="airports">~$300</div>
+    </div>
+    <div class="flight-row total">
+      <div class="num"><strong>Σ</strong></div>
+      <div class="route">
+        <div class="cities">Total per person</div>
+        <div class="note">Roughly $3,400–3,900 depending on hotel tier and how hard you go on wagyu. Shopping not included.</div>
+      </div>
+      <div class="airports">~$3,600</div>
+    </div>
+  </div>
+
+  <!-- ===================== CUSTOMS ===================== -->
+  <h2 class="section-heading" id="customs">Customs &amp; entry</h2>
+  <p class="section-sub">Visa, paperwork, and what you can bring back</p>
+
+  <div class="day tk">
+    <div class="day-header">
+      <span class="day-date">Oct 24 – Nov 1 · 9 days</span>
+    </div>
+    <div class="day-place">🇯🇵 Japan</div>
+    <div class="day-section">
+      <div class="day-section-label">Visa</div>
+      <div class="day-section-items">
+        <div>Visa-free up to 90 days for US passport holders — no application needed</div>
+        <div class="meta">Passport must be valid for the length of the stay · 1 blank page</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Entry form</div>
+      <div class="day-section-items">
+        <div><strong>Visit Japan Web</strong> — pre-fill the immigration card + customs declaration online</div>
+        <div class="meta">vjw-lp.digital.go.jp · do it Oct 20–21 · generates QR codes you scan at immigration and customs · saves 20–30 min at 5 AM</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Cash declaration</div>
+      <div class="day-section-items">
+        <div>Declare if carrying over ¥1,000,000 (~$6,500 USD)</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Heads up</div>
+      <div class="day-section-items">
+        <div>No COVID rules · no vaccination or testing</div>
+        <div>Some common US meds are restricted (anything with pseudoephedrine, e.g. Sudafed; Adderall is banned outright). Bring prescriptions in original bottles.</div>
+        <div>Cash still matters — small ramen shops, temples, Omoide Yokochō and taxis outside the city can be cash-only. 7-Eleven ATMs take US cards.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day tr">
+    <div class="day-header">
+      <span class="day-date">Nov 1 · arrival home</span>
+    </div>
+    <div class="day-place">🇺🇸 USA re-entry</div>
+    <div class="day-section">
+      <div class="day-section-label">Customs declaration</div>
+      <div class="day-section-items">
+        <div>Use the <strong>Mobile Passport Control</strong> app to skip the kiosk line at LAX — download it before you leave Japan</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Duty-free allowance</div>
+      <div class="day-section-items">
+        <div>$800 USD per person of personal goods · alcohol 1 liter · gifts count toward the total</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Don't bring back</div>
+      <div class="day-section-items">
+        <div>Fresh fruit (no Japanese strawberries or melons) · meat products, including vacuum-packed wagyu and most jerky · live plants</div>
+        <div>Fine: packaged snacks, KitKats, tea, sake (within the 1 liter), knives in checked bags, ceramics</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== PRE-TRIP ADMIN ===================== -->
+  <h2 class="section-heading">Pre-trip admin</h2>
+  <p class="section-sub">Calendar reminders &amp; paperwork</p>
+
+  <div class="flights">
+    <div class="flight-row">
+      <div class="num"><strong>📅</strong>Now</div>
+      <div class="route">
+        <div class="cities">Passport check</div>
+        <div class="note">Valid through Nov 1, 2026 at minimum; 6+ months (through May 2027) avoids any airline-desk argument</div>
+      </div>
+      <div class="airports">Verify</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>📅</strong>Now</div>
+      <div class="route">
+        <div class="cities">Travel insurance</div>
+        <div class="note">~$60–100 · covers the no-change fare if something goes sideways, plus medical</div>
+      </div>
+      <div class="airports">Buy</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>📅</strong>Now</div>
+      <div class="route">
+        <div class="cities">Smart-EX account + Shinkansen seats</div>
+        <div class="note">Download Smart-EX, register, book the three legs (item 6 above). Pick "ticketless" and link your Suica or use the QR code at the gate</div>
+      </div>
+      <div class="airports">Set up</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>📅</strong>Now</div>
+      <div class="route">
+        <div class="cities">Suica in Apple Wallet</div>
+        <div class="note">iPhone: Wallet → + → Transit Card → Suica · load ¥5,000 with Apple Pay · works on every train, bus, vending machine and conbini. Android (non-Japanese) can't — get a Welcome Suica at Haneda instead</div>
+      </div>
+      <div class="airports">Add</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>📅</strong>Before you fly</div>
+      <div class="route">
+        <div class="cities">eSIM for data</div>
+        <div class="note">Ubigi or Airalo · 10 GB Japan plan ~$15–20 · install at home, activate on landing · keep US SIM on for texts</div>
+      </div>
+      <div class="airports">Buy</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>📅</strong>Oct 20–21</div>
+      <div class="route">
+        <div class="cities">Visit Japan Web</div>
+        <div class="note">Fill in flight + hotel + customs answers · screenshot the QR codes in case the airport Wi-Fi is bad</div>
+      </div>
+      <div class="airports">Register</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>📅</strong>Oct 22, 12:40 AM</div>
+      <div class="route">
+        <div class="cities">Online check-in opens (24 hrs before)</div>
+        <div class="note">Then: tell your card issuers you're traveling (or confirm no-foreign-fee cards), download offline maps</div>
+      </div>
+      <div class="airports">Check in</div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>📅</strong>Oct 27 AM</div>
+      <div class="route">
+        <div class="cities">Ship suitcases Tokyo → Kyoto</div>
+        <div class="note">Front desk, Yamato takkyubin, Kyoto hotel address + your name + check-in date · keep the receipt slip</div>
+      </div>
+      <div class="airports">Ship</div>
+    </div>
+  </div>
+
+  <!-- ===================== PREP ===================== -->
+  <h2 class="section-heading" id="prep">Pre-flight checklist</h2>
+  <p class="section-sub">What to pack, download, and pick up before Oct 22</p>
+
+  <div class="day tk">
+    <div class="day-header">
+      <span class="day-date">Documents</span>
+    </div>
+    <div class="day-place">📄 Paperwork &amp; copies</div>
+    <div class="day-section">
+      <div class="day-section-label">Required</div>
+      <div class="day-section-items">
+        <div>Passport</div>
+        <div>Visit Japan Web QR codes (screenshot)</div>
+        <div>Flight + hotel confirmations saved offline (and printed if you're the cautious type)</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Digital backups</div>
+      <div class="day-section-items">
+        <div>Photo of passport saved to phone &amp; cloud</div>
+        <div>Credit card numbers + fraud hotlines in a secure note</div>
+        <div>Hotel addresses in Japanese (copy from Google Maps) — show to taxi drivers</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day tk">
+    <div class="day-header">
+      <span class="day-date">Apps</span>
+    </div>
+    <div class="day-place">📱 Download before leaving</div>
+    <div class="day-section">
+      <div class="day-section-label">Essential</div>
+      <div class="day-section-items">
+        <div><strong>Google Maps</strong> — download Tokyo, Hakone, Kyoto, Nara offline. It knows every train, platform and transfer; it's all you need for transit</div>
+        <div><strong>Google Translate</strong> — download Japanese offline · camera mode reads menus</div>
+        <div><strong>Smart-EX</strong> — Shinkansen tickets</div>
+        <div><strong>Suica</strong> (in Apple Wallet) — trains, buses, conbini</div>
+        <div><strong>Visit Japan Web</strong> — immigration QR</div>
+        <div><strong>Mobile Passport Control</strong> — skip the line at LAX coming home</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Useful</div>
+      <div class="day-section-items">
+        <div><strong>GO</strong> — the taxi app (English, card on file, Uber-style) · Uber also works in Tokyo/Kyoto but calls the same cabs</div>
+        <div><strong>Klook</strong> — teamLab, Shibuya Sky, Nikkō trains if you want one checkout</div>
+        <div><strong>TableCheck</strong> — most restaurant reservations</div>
+        <div><strong>Airalo / Ubigi</strong> — the eSIM</div>
+        <div><strong>Hakone Ropeway status</strong> — bookmark the Odakyu Hakone site; check the morning of Oct 27</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day tk">
+    <div class="day-header">
+      <span class="day-date">Packing</span>
+    </div>
+    <div class="day-place">🎒 Pack for late October</div>
+    <div class="day-section">
+      <div class="day-section-label">Clothes</div>
+      <div class="day-section-items">
+        <div>Tokyo / Kyoto (52–70°F): jeans, t-shirts, a light jacket or hoodie for evenings · Hakone runs 10°F cooler — one warm layer</div>
+        <div>One smart-casual outfit for Shodai, kaiseki and K36 (no shorts, no athletic wear)</div>
+        <div>Shorts or pants you can roll above the knee for teamLab Planets (you wade through water)</div>
+        <div>Compact umbrella or rain shell — or buy a ¥600 one at any conbini when it rains</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Footwear</div>
+      <div class="day-section-items">
+        <div>Broken-in walking shoes — Tokyo and Kyoto days run 15,000–20,000 steps</div>
+        <div>Slip-ons are a gift: shoes come off at temples, the ryokan, and some restaurants, several times a day</div>
+        <div>Socks without holes. Everyone will see them.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Gear</div>
+      <div class="day-section-items">
+        <div>Power: Japan uses 2-prong Type A plugs at 100V — US 2-prong plugs fit straight in, no adapter · 3-prong (laptop bricks) needs a cheap adapter</div>
+        <div>10,000 mAh power bank — Google Maps all day eats the phone</div>
+        <div>One overnight bag / backpack that holds a night's clothes for Hakone (the suitcases get shipped)</div>
+        <div>Suitcases ≤160 cm (L+W+H) to stay under the Shinkansen oversized-bag rule — standard checked bags are fine</div>
+        <div>Small hand towel — many public bathrooms have no paper towels or dryers</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Cash &amp; cards</div>
+      <div class="day-section-items">
+        <div>Withdraw ¥30,000–50,000 at a 7-Eleven ATM at Haneda on arrival (best rate, takes US cards 24/7)</div>
+        <div>2 credit cards from different networks (Visa + Mastercard/Amex), no foreign transaction fees</div>
+        <div>Suica covers conbini, vending machines and a lot of small shops — load it up and use it like cash</div>
+        <div>Put cash on the little tray at the register, not in their hand</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Health</div>
+      <div class="day-section-items">
+        <div>Ibuprofen / acetaminophen, Imodium, blister pads, melatonin for the time shift</div>
+        <div>Prescriptions in original bottles + a photo of the script · check the restricted list (no Sudafed, no Adderall)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== ETIQUETTE ===================== -->
+  <h2 class="section-heading" id="etiquette">Local etiquette</h2>
+  <p class="section-sub">Quick cultural cards · don't be the rude tourist</p>
+
+  <div class="day tk">
+    <div class="day-header">
+      <span class="day-date">🇯🇵 Everywhere</span>
+    </div>
+    <div class="day-place">Tokyo · Kyoto · Nara</div>
+    <div class="day-section">
+      <div class="day-section-label">Tipping</div>
+      <div class="day-section-items">
+        <div><strong>Don't tip.</strong> Ever. It confuses people — they may chase you down to return it.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Shoes</div>
+      <div class="day-section-items">
+        <div>Off when entering the ryokan, temples, and some restaurants (look for the raised step and a row of shoes)</div>
+        <div>Slippers usually provided; the bathroom has its own slippers — switch back when leaving</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Manners</div>
+      <div class="day-section-items">
+        <div>No eating or drinking while walking — stand by the stall, finish, then move (Tsukiji and Nishiki enforce this)</div>
+        <div>No phone calls on trains · quiet voices in public · no trash cans anywhere, so carry your wrappers till a conbini</div>
+        <div>Bow lightly when greeting / thanking — a nod is fine for tourists</div>
+        <div>Never stick chopsticks upright in rice (funeral symbol) · don't pass food chopstick-to-chopstick</div>
+        <div>Escalators: stand left in Tokyo, stand right in Kyoto/Osaka. Yes, really.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Geisha &amp; photos</div>
+      <div class="day-section-items">
+        <div>Gion's private lanes now fine tourists for photographing geiko/maiko up close. Shoot from the main street, don't follow, don't touch.</div>
+        <div>Ask before photographing people at shops and counters. Temples: look for the no-photo signs inside halls.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day hk">
+    <div class="day-header">
+      <span class="day-date">♨️ Hakone</span>
+    </div>
+    <div class="day-place">Onsen &amp; ryokan</div>
+    <div class="day-section">
+      <div class="day-section-label">The bath</div>
+      <div class="day-section-items">
+        <div>Wash thoroughly at the sit-down shower stations <em>before</em> getting in · the bath is for soaking, not cleaning</div>
+        <div>No swimsuits · the small towel comes with you but never goes in the water (fold it on your head like everyone else)</div>
+        <div>Tattoos are still banned at most shared baths — use a private or in-room bath, or ask the ryokan what they allow</div>
+        <div>Don't swim, don't splash, keep your voice down · 10–15 minutes in, step out, repeat</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">The room</div>
+      <div class="day-section-items">
+        <div>Yukata (cotton robe) is worn left-over-right — right-over-left is for the dead · fine to wear it to dinner and around the ryokan</div>
+        <div>Don't step on the tatami in slippers · the futon gets laid out while you're at dinner</div>
+        <div>Dinner is at a set time (usually 6–7 PM) — tell them at check-in if you'll be late</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day tr">
+    <div class="day-header">
+      <span class="day-date">🚄 Trains</span>
+    </div>
+    <div class="day-place">Shinkansen &amp; subways</div>
+    <div class="day-section">
+      <div class="day-section-label">Shinkansen</div>
+      <div class="day-section-items">
+        <div>Reserved seats on Smart-EX · line up at the painted marks on the platform · the train stops for about 60 seconds, have your stuff ready</div>
+        <div>Bags under 160 cm go overhead or behind the last row · bigger needs a reserved oversized-bag seat (free, but limited)</div>
+        <div>Eating is normal on the Shinkansen (that's what ekiben are for) · not on subways</div>
+        <div>Sit on the right side (seats D/E) Tokyo → Odawara/Kyoto for Fuji out the window</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Local trains</div>
+      <div class="day-section-items">
+        <div>Tap Suica at the gate, tap out at the other end — it does the math</div>
+        <div>Rush hour is 7:30–9:30 AM and 5:30–7:30 PM · avoid the Yamanote and Tokyo subways with luggage then</div>
+        <div>Last trains run around midnight–12:30 AM; after that it's a taxi (GO app)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== WATCH-OUTS ===================== -->
+  <h2 class="section-heading" id="watch">Watch-outs</h2>
+  <p class="section-sub">Pre-flagged risks · plan around these</p>
+
+  <div class="flights">
+    <div class="flight-row">
+      <div class="num"><strong>⚠</strong>Oct 22</div>
+      <div class="route">
+        <div class="cities">The flight is "Friday" at 12:40 AM</div>
+        <div class="note">That's Thursday night. Be at LAX by ~10 PM Thursday, Oct 22. Put it in the calendar as Thursday, not Friday.</div>
+      </div>
+      <div class="airports"></div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>⚠</strong>Fare</div>
+      <div class="route">
+        <div class="cities">Basic Plus Bag = no changes, no refunds</div>
+        <div class="note">If the dates aren't locked, the $260 Main Cabin upgrade is cheaper than a new ticket. Either way, buy travel insurance.</div>
+      </div>
+      <div class="airports"></div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>⚠</strong>Oct 24</div>
+      <div class="route">
+        <div class="cities">4:45 AM arrival, no room until 3 PM</div>
+        <div class="note">Decide Day 1's Option A / B / C before you go. Option A (book Oct 23 too) is the one that makes Day 1 actually good.</div>
+      </div>
+      <div class="airports"></div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>⚠</strong>Oct 24</div>
+      <div class="route">
+        <div class="cities">Jet lag · 16-hour shift</div>
+        <div class="note">Sleep on the plane right away. Day 1 nap ≤ 90 min. Daylight and walking. Bed at 9–10 PM local. Day 2 you'll wake at 5 AM naturally — perfect for Sensō-ji.</div>
+      </div>
+      <div class="airports"></div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>⚠</strong>All trip</div>
+      <div class="route">
+        <div class="cities">It's not peak fall color</div>
+        <div class="note">Kyoto maples peak mid-December in the 2026 forecast. Expect green with a few early reds in Tokyo/Kyoto, real color only up in Hakone's heights and Nikkō. Go for the light-ups, the weather and the empty-ish temples instead.</div>
+      </div>
+      <div class="airports"></div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>⚠</strong>Oct 27</div>
+      <div class="route">
+        <div class="cities">Hakone Ropeway can close for volcanic gas</div>
+        <div class="note">Check the Odakyu Hakone site that morning. When it's closed, buses run the same loop; you lose the gondola view but still get the lake, ship and torii.</div>
+      </div>
+      <div class="airports"></div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>⚠</strong>Oct 27</div>
+      <div class="route">
+        <div class="cities">Luggage forwarding timing</div>
+        <div class="note">Ship by ~10 AM Oct 27 → arrives at the Kyoto hotel Oct 28 (usually afternoon). If that makes you nervous, ship the evening of Oct 26 instead and it arrives a day early; the hotel will hold it. Keep the slip.</div>
+      </div>
+      <div class="airports"></div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>⚠</strong>Oct 27–28</div>
+      <div class="route">
+        <div class="cities">Tattoos at the onsen</div>
+        <div class="note">Most shared baths still say no. Book a ryokan with private/in-room baths or buy cover-up patches — don't find this out in the changing room.</div>
+      </div>
+      <div class="airports"></div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>⚠</strong>Oct 29</div>
+      <div class="route">
+        <div class="cities">Kōdai-ji light-up dates were provisional</div>
+        <div class="note">Listed Oct 23 – Dec 13 for 2026 by one source. Check kodaiji.com the week before. If it hasn't started, Yasaka Shrine's lanterns and Gion are lit anyway.</div>
+      </div>
+      <div class="airports"></div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>⚠</strong>Oct 31</div>
+      <div class="route">
+        <div class="cities">Halloween · Shibuya is a no</div>
+        <div class="note">Street-drinking ban 6 PM–5 AM, Hachikō fenced off, heavy police, the ward asks people to stay away. Don't book the last-night hotel in Shibuya either — it'll be loud till 2 AM.</div>
+      </div>
+      <div class="airports"></div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>⚠</strong>Oct 31</div>
+      <div class="route">
+        <div class="cities">Saturday-afternoon Shinkansen seats</div>
+        <div class="note">Kyoto → Tokyo on a Saturday afternoon fills up. Book the Oct 31 ~3:30 PM Nozomi now, not that week.</div>
+      </div>
+      <div class="airports"></div>
+    </div>
+    <div class="flight-row">
+      <div class="num"><strong>⚠</strong>Everywhere</div>
+      <div class="route">
+        <div class="cities">Cash-only pockets</div>
+        <div class="note">Omoide Yokochō, Golden Gai, temple entries, small ramen counters, Nara deer crackers. Keep ¥10,000 in small bills on you at all times.</div>
+      </div>
+      <div class="airports"></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <em>fin.</em><br/><br/>
+    Tokyo · Hakone · Kyoto · Nara<br/>
+    Draft v1 · Oct 2026 · built from Grant's own Japan trip, Mom &amp; Dad's, and current forecasts · everything here is a suggestion, not a rule
+  </div>
+
+</div>
+
+<!-- Lightbox modal (for booking screenshots — add data-img="file.png" to any .flight-row and drop the image in images/bookings/) -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <div class="lightbox-close" onclick="closeLightbox(event)">×</div>
+  <img id="lightbox-img" src="" alt="" style="display:none">
+  <div id="lightbox-missing" class="lightbox-missing" style="display:none">
+    <p>📎 Screenshot not yet saved</p>
+    <p style="font-size: 14px; margin-top: 12px; opacity: 0.8;">Save the original confirmation as:<br>
+    <code id="lightbox-filename"></code><br>
+    inside <code>images/bookings/</code> and refresh.</p>
+  </div>
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<script>
+document.querySelectorAll('.flight-row[data-img]').forEach(row => {
+  row.addEventListener('click', () => openLightbox(row.dataset.img, row.dataset.caption));
+});
+function openLightbox(filename, caption) {
+  var lb = document.getElementById('lightbox');
+  var img = document.getElementById('lightbox-img');
+  var missing = document.getElementById('lightbox-missing');
+  var captionEl = document.getElementById('lightbox-caption');
+  var src = 'images/bookings/' + filename;
+  var testImg = new Image();
+  testImg.onload = function() { img.src = src; img.style.display = ''; missing.style.display = 'none'; };
+  testImg.onerror = function() { img.style.display = 'none'; document.getElementById('lightbox-filename').textContent = filename; missing.style.display = ''; };
+  testImg.src = src;
+  captionEl.textContent = caption || '';
+  lb.classList.add('open');
+}
+function closeLightbox(e) {
+  if (e.target.id === 'lightbox' || e.target.classList.contains('lightbox-close')) {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('open');
+});
+</script>
+
+</body>
+</html>

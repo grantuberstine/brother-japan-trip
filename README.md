@@ -1,27 +1,16 @@
 # Japan · Oct 23 – Nov 1, 2026
 
-Tokyo · Hakone · Kyoto · Nara — 8 nights. Draft itinerary page for my brother's trip.
+Working itinerary page for my brother's Japan trip. Kept deliberately broad — hotels, food and activity suggestions get slotted in as Grant provides them.
 
 **Live site**: https://grantuberstine.github.io/brother-japan-trip/
 
-Same format as `parents-japan-trip` and `grantlina-asia-trip`: one static `index.html`, no build step, hosted on GitHub Pages (branch `main`, root).
+Plain static `index.html`, no build step, GitHub Pages (branch `main`, root).
+
+- `index.html` — the live page
+- `notes/full-draft-v1.html` — an earlier fully-filled draft, kept only as a source of ideas (not linked)
 
 ## Updating
-
-After editing `index.html`, run:
 
 ```bash
 ./update.sh
 ```
-
-Or manually:
-
-```bash
-git add . && git commit -m "update" && git push
-```
-
-Site updates within ~30 seconds.
-
-## When bookings come in
-
-Add `data-img="file.png"` to any row in the Flights / Hotels tables and drop the confirmation screenshot in `images/bookings/`. The row becomes clickable and opens the screenshot. Swap the amber "Not booked" labels for the green `.booked` badge as things get locked in.
