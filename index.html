@@ -229,6 +229,11 @@
   .flight-row.add { background: transparent; border-top: 1px dashed var(--line); }
   .flight-row.add .route .cities { color: var(--ink-muted); font-style: italic; font-weight: 400; font-family: 'Fraunces', serif; }
   .flight-row .num.big strong { font-size: 18px; }
+
+  .tbd { display: inline-block; border: 1px dashed #B5801E; color: #8A6516; border-radius: 4px; padding: 0 8px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; line-height: 1.7; vertical-align: middle; }
+  .day-section-label .area { color: var(--ink-soft); font-weight: 500; letter-spacing: 0.08em; text-transform: none; }
+  .day-section-label .area::before { content: ' · '; }
+  .day-section-items .how { color: var(--ink-muted); font-size: 12.5px; }
 </style>
 </head>
 <body>
@@ -241,7 +246,7 @@
     <a href="#tokyo">Tokyo</a>
     <a href="#fuji">Fuji / Hakone</a>
     <a href="#kyoto">Kyoto</a>
-    <a href="#days">Rough days</a>
+    <a href="#days">Day by day</a>
     <a href="#needed">Still needed</a>
   </div>
 </nav>
@@ -344,13 +349,15 @@
         <div class="cal-place">Tokyo · arrival</div>
         <div class="cal-items">
           <div class="cal-item"><span class="cal-item-icon">✈️</span><span class="cal-item-text">Land 5 AM</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🐱</span><span class="cal-item-text">Gōtokuji · Shiro-Hige</span></div>
           <div class="cal-item"><span class="cal-item-icon">🏨</span><span class="cal-item-text">Park Hyatt Tokyo</span></div>
         </div>
       </div>
       <div class="cal-day tk">
         <div class="cal-day-head"><span class="cal-date">26</span><span class="cal-num">D2 · Mon</span></div>
-        <div class="cal-place">Tokyo</div>
+        <div class="cal-place">Tokyo · east side</div>
         <div class="cal-items">
+          <div class="cal-item"><span class="cal-item-icon">⛩️</span><span class="cal-item-text">Sensō-ji · Tsukiji · teamLab</span></div>
           <div class="cal-item"><span class="cal-item-icon">🏨</span><span class="cal-item-text">Hotel Toranomon Hills</span></div>
         </div>
       </div>
@@ -366,7 +373,7 @@
         <div class="cal-day-head"><span class="cal-date">28</span><span class="cal-num">D4 · Wed</span></div>
         <div class="cal-place">→ Kyoto</div>
         <div class="cal-items">
-          <div class="cal-item"><span class="cal-item-icon">🚄</span><span class="cal-item-text">Shinkansen · 2 hr 15</span></div>
+          <div class="cal-item"><span class="cal-item-icon">🚄</span><span class="cal-item-text">Shinkansen · teamLab Biovortex</span></div>
           <div class="cal-item muted"><span class="cal-item-icon">🏨</span><span class="cal-item-text">Kyoto · TBD</span></div>
         </div>
       </div>
@@ -428,7 +435,7 @@
         <div class="cities">Katsudon-ya Zuichō</div>
         <div class="note">Worth it. Tiny katsudon counter, no reservations, 30–45 min line, go anyway</div>
       </div>
-      <div class="airports">Shibuya</div>
+      <div class="airports">Shibuya · Day 3 lunch</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>★</strong></div>
@@ -436,7 +443,7 @@
         <div class="cities">Gyukatsu Katsugyu</div>
         <div class="note">Breaded beef cutlet, sliced rare, you sear each piece on a hot stone · walk-in</div>
       </div>
-      <div class="airports">Shibuya</div>
+      <div class="airports">Shibuya · backup</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>★</strong></div>
@@ -444,7 +451,7 @@
         <div class="cities">Tsukiji Outer Market</div>
         <div class="note">Breakfast crawl: sushi, tamago skewers, wagyu skewers, strawberries · stalls ~7 AM–2 PM · 10 min from Hotel Toranomon Hills</div>
       </div>
-      <div class="airports">Tsukiji</div>
+      <div class="airports">Tsukiji · Day 2</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>★</strong></div>
@@ -452,7 +459,7 @@
         <div class="cities">Shodai</div>
         <div class="note">Get the potato udon (wagyu beef udon with potato foam) · small counter, reservation needed</div>
       </div>
-      <div class="airports">Ebisu</div>
+      <div class="airports">Ebisu · Day 1 dinner</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>★</strong></div>
@@ -460,7 +467,7 @@
         <div class="cities">Hikiniku to Come</div>
         <div class="note">The hamburg-steak-and-rice place · reservations open online and go fast, so book early</div>
       </div>
-      <div class="airports">Shibuya</div>
+      <div class="airports">Shibuya · Day 3 dinner</div>
     </div>
     <div class="flight-row add">
       <div class="num"><strong>+</strong></div>
@@ -481,7 +488,7 @@
         <div class="cities">Gōtokuji Temple</div>
         <div class="note">The lucky-cat temple, thousands of waving cats · quiet west-side neighborhood</div>
       </div>
-      <div class="airports">Setagaya</div>
+      <div class="airports">Setagaya · Day 1</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>🍮</strong></div>
@@ -489,7 +496,7 @@
         <div class="cities">Shiro-Hige's Cream Puff Factory</div>
         <div class="note">Totoro-shaped cream puffs · a few stops from Gōtokuji, pair them</div>
       </div>
-      <div class="airports">Setagaya</div>
+      <div class="airports">Setagaya · Day 1</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>⛩️</strong></div>
@@ -497,7 +504,7 @@
         <div class="cities">Sensō-ji Temple</div>
         <div class="note">Tokyo's oldest temple and the Nakamise street · go before 9 AM or after dark to skip the crowds</div>
       </div>
-      <div class="airports">Asakusa</div>
+      <div class="airports">Asakusa · Day 2</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>🎟️</strong></div>
@@ -505,15 +512,15 @@
         <div class="cities">teamLab Planets</div>
         <div class="note">Barefoot through water and mirror rooms · timed ticket, book ahead · wear pants you can roll up</div>
       </div>
-      <div class="airports">Toyosu</div>
+      <div class="airports">Toyosu · Day 2</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>🛍️</strong></div>
       <div class="route">
         <div class="cities">Don Quijote</div>
-        <div class="note">The chaotic everything store · MEGA Don Quijote in Shibuya is the big one, open late</div>
+        <div class="note">The chaotic everything store · the Kabukichō one is 10 min from the Park Hyatt and open 24 h · MEGA Don Quijote Shibuya is the bigger one if you skip it on Day 1</div>
       </div>
-      <div class="airports">Shibuya</div>
+      <div class="airports">Shinjuku · Day 1 night</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>🍵</strong></div>
@@ -521,7 +528,7 @@
         <div class="cities">RURU matcha</div>
         <div class="note">Matcha café · easy stop on a Shibuya food day</div>
       </div>
-      <div class="airports">Shibuya</div>
+      <div class="airports">Shibuya · Day 3</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>🌆</strong></div>
@@ -529,7 +536,7 @@
         <div class="cities">Shibuya Sky</div>
         <div class="note">Open-air rooftop over the whole city · book the sunset slot (~4:45 PM in late October) online, weeks ahead — they sell out</div>
       </div>
-      <div class="airports">Shibuya</div>
+      <div class="airports">Shibuya · Day 3 sunset</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>🐶</strong></div>
@@ -537,7 +544,7 @@
         <div class="cities">Samoyed Café moffu</div>
         <div class="note">Pet a giant fluffy samoyed · reservation required online, book early · 10 min walk from Shibuya</div>
       </div>
-      <div class="airports">Harajuku</div>
+      <div class="airports">Harajuku · Day 3</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>☕</strong></div>
@@ -545,7 +552,7 @@
         <div class="cities">Latte Pocket</div>
         <div class="note">The 4D latte — a 3D foam figure on top of your drink · tiny café, expect a short line · pairs with moffu</div>
       </div>
-      <div class="airports">Harajuku</div>
+      <div class="airports">Harajuku · Day 3</div>
     </div>
     <div class="flight-row add">
       <div class="num"><strong>+</strong></div>
@@ -603,7 +610,7 @@
         <div class="cities">Gyukatsu Katsugyu</div>
         <div class="note">Same beef cutlet as Tokyo, Kyoto branch · walk-in</div>
       </div>
-      <div class="airports">Central</div>
+      <div class="airports">Central · Day 6 dinner</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>★</strong></div>
@@ -611,7 +618,7 @@
         <div class="cities">K36 The Bar &amp; Rooftop</div>
         <div class="note">Pizza and cocktails on the roof of Hotel Seiryu, looking straight at the Yasaka Pagoda · go for sunset (~5 PM), reserve or arrive early</div>
       </div>
-      <div class="airports">Higashiyama</div>
+      <div class="airports">Higashiyama · Day 5 sunset</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>★</strong></div>
@@ -619,7 +626,7 @@
         <div class="cities">Kyoto Ramen Yukichi Honpo</div>
         <div class="note">Refined Kyoto-style chicken-broth ramen · counter seats · walk-in</div>
       </div>
-      <div class="airports">Central</div>
+      <div class="airports">Central · Day 5 dinner</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>★</strong></div>
@@ -627,7 +634,7 @@
         <div class="cities">Nishiki Market</div>
         <div class="note">Five blocks of stalls — graze instead of lunch · closes around 6 PM</div>
       </div>
-      <div class="airports">Central</div>
+      <div class="airports">Central · Day 5 lunch</div>
     </div>
     <div class="flight-row add">
       <div class="num"><strong>+</strong></div>
@@ -648,7 +655,7 @@
         <div class="cities">Arashiyama day</div>
         <div class="note">Morning: train to Kameoka, Hozugawa river boat down the gorge (~2 hr, ends in Arashiyama) → bamboo forest → monkey park (steep 20-min climb, city view) · book the boat ahead</div>
       </div>
-      <div class="airports">Arashiyama</div>
+      <div class="airports">Day 6</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>✨</strong></div>
@@ -656,7 +663,7 @@
         <div class="cities">Kinkaku-ji</div>
         <div class="note">The Golden Pavilion · ~30 min from Arashiyama by bus or taxi, so pair it with that day</div>
       </div>
-      <div class="airports">North</div>
+      <div class="airports">North · Day 6</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>🏯</strong></div>
@@ -664,7 +671,7 @@
         <div class="cities">Higashiyama ward walk + Hōkan-ji</div>
         <div class="note">Kiyomizu-dera → Sannenzaka and Ninenzaka stone lanes → Hōkan-ji (the Yasaka Pagoda) → Gion · all on foot · K36 is right across from the pagoda, so end here at sunset</div>
       </div>
-      <div class="airports">Higashiyama</div>
+      <div class="airports">Day 5</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>🦌</strong></div>
@@ -672,7 +679,7 @@
         <div class="cities">Nara day trip · deer + Tōdai-ji</div>
         <div class="note">~40 min by Kintetsu express · bowing deer in Nara Park (¥200 crackers), Tōdai-ji's giant bronze Buddha next to it · half a day is enough</div>
       </div>
-      <div class="airports">Nara</div>
+      <div class="airports">Nara · Day 7</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>👘</strong></div>
@@ -680,7 +687,7 @@
         <div class="cities">Matcha tasting in kimono</div>
         <div class="note">Kimono rental + tea ceremony / matcha tasting · Higashiyama and Gion are full of places that do both · book ahead · do it in the morning and walk Higashiyama in the kimono</div>
       </div>
-      <div class="airports">Higashiyama</div>
+      <div class="airports">Higashiyama · Day 5 morning</div>
     </div>
     <div class="flight-row">
       <div class="num"><strong>🎟️</strong></div>
@@ -688,7 +695,7 @@
         <div class="cities">teamLab Biovortex Kyoto</div>
         <div class="note">The Kyoto teamLab · 7-min walk from Kyoto Station · timed ticket · easiest straight off the train on arrival day</div>
       </div>
-      <div class="airports">Kyoto Station</div>
+      <div class="airports">Kyoto Station · Day 4</div>
     </div>
     <div class="flight-row add">
       <div class="num"><strong>+</strong></div>
@@ -697,137 +704,441 @@
     </div>
   </div>
 
-  <!-- ===================== ROUGH DAYS ===================== -->
-  <h2 class="section-heading" id="days">Rough days</h2>
-  <p class="section-sub">A proposed split of the lists above · nothing fixed · move things around freely</p>
+  <!-- ===================== DAY BY DAY ===================== -->
+  <h2 class="section-heading" id="days">Day by day</h2>
+  <p class="section-sub">Follow this top to bottom. Times are targets, not rules. <span class="tbd">TBD</span> = still to pick.</p>
 
+  <!-- DAY 1 -->
   <div class="day tk">
     <div class="day-header">
       <span class="day-date">Sunday, Oct 25 · Day 1</span>
+      <span class="booked">Park Hyatt Tokyo</span>
     </div>
-    <div class="day-place">Tokyo · arrival · Shinjuku</div>
+    <div class="day-place">Tokyo · arrival · Shinjuku + the lucky cats</div>
     <div class="day-section">
-      <div class="day-section-label">The plan</div>
+      <div class="day-section-label">5:00 AM <span class="area">land</span></div>
       <div class="day-section-items">
-        <div>Land 5 AM, taxi to the Park Hyatt, drop bags (or check in early if arranged). Keep it light and stay awake until evening.</div>
-        <div>Easy afternoon: the Odakyu line from Shinjuku reaches <strong>Gōtokuji</strong> (lucky cats) and <strong>Shiro-Hige</strong> (Totoro cream puffs) in ~15 min — quiet, low-effort, perfect on no sleep.</div>
-        <div>Back in Shinjuku: Don Quijote, Omoide Yokochō yakitori alley, the free view from the Metropolitan Government Building. <strong>Shodai</strong> in Ebisu for dinner if you can get the booking.</div>
-        <div class="meta">New York Bar on the Park Hyatt's 52nd floor for a nightcap — the view is the whole reason to stay here.</div>
+        <div>Immigration (Visit Japan Web QR), bags, cash from a 7-Eleven ATM in arrivals.</div>
+        <div class="how">Taxi to the Park Hyatt: ~40 min from Haneda (~¥10,000) or ~80 min from Narita. Or Suica + train if you're feeling fresh.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">7:00 – 10:00 AM <span class="area">Park Hyatt Tokyo, Shinjuku</span></div>
+      <div class="day-section-items">
+        <div>Drop bags (or check in, if early check-in is arranged). Shower if they have a room. Breakfast at the hotel or a conbini.</div>
+        <div class="how">The room officially starts at 3 PM — the ask for early check-in goes in now, before the trip.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">10:30 AM <span class="area">Odakyu line to Gōtokuji · 15 min</span></div>
+      <div class="day-section-items">
+        <div><strong>Gōtokuji Temple</strong> — the lucky-cat temple. Thousands of waving cats behind the main hall. 45 minutes.</div>
+        <div class="how">Walk 12 min (or the hotel shuttle) to Shinjuku Station → Odakyu line local train → Gōtokuji station → 5-min walk.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">12:15 PM <span class="area">Shiro-Hige's Cream Puff Factory, Setagaya-Daita</span></div>
+      <div class="day-section-items">
+        <div><strong>Shiro-Hige</strong> — Totoro cream puffs and coffee. Light lunch here, or hold out for Shinjuku.</div>
+        <div class="how">Odakyu line 2 stops back toward Shinjuku → Setagaya-Daita station → 5-min walk. Then Odakyu back to Shinjuku, 10 min.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">2:00 – 4:00 PM <span class="area">Park Hyatt</span></div>
+      <div class="day-section-items">
+        <div>Check in. Nap, <strong>90 minutes max</strong>, alarm on. Then daylight and a walk — this is what fixes the jet lag.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">4:30 PM <span class="area">Tokyo Metropolitan Government Building · 10-min walk</span></div>
+      <div class="day-section-items">
+        <div>Free observation deck on the 45th floor. Sunset is 4:50 PM. Optional, but it's the easiest view in the city and it's next door.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">6:30 PM <span class="area">dinner</span></div>
+      <div class="day-section-items">
+        <div><strong>Shodai</strong>, Ebisu — the potato udon — if the reservation lands. 15-min taxi from the hotel.</div>
+        <div>Otherwise <span class="tbd">TBD · dinner in Shinjuku</span></div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">8:30 PM <span class="area">Shinjuku · Kabukichō</span></div>
+      <div class="day-section-items">
+        <div><strong>Don Quijote</strong> Kabukichō — open 24 hours, 10 min from the hotel. Snacks, gifts, the chaos.</div>
+        <div>Nightcap at the <strong>New York Bar</strong> on the Park Hyatt's 52nd floor (cover charge after ~8 PM for the live jazz). In bed by 10:30.</div>
       </div>
     </div>
   </div>
 
+  <!-- DAY 2 -->
   <div class="day tk">
     <div class="day-header">
       <span class="day-date">Monday, Oct 26 · Day 2</span>
+      <span class="booked">Hotel Toranomon Hills</span>
     </div>
-    <div class="day-place">Tokyo · east side</div>
+    <div class="day-place">Tokyo · east side · temple, market, teamLab</div>
     <div class="day-section">
-      <div class="day-section-label">The plan</div>
+      <div class="day-section-label">7:30 AM <span class="area">move hotels</span></div>
       <div class="day-section-items">
-        <div>Check out, drop bags at Hotel Toranomon Hills. <strong>Tsukiji</strong> breakfast is 10 min away. Then <strong>Sensō-ji</strong> in Asakusa and <strong>teamLab Planets</strong> in Toyosu (book a slot).</div>
-        <div class="meta">Both are on the east side of the city, so this day groups naturally.</div>
+        <div>Check out of the Park Hyatt. Taxi to <strong>Hotel Toranomon Hills</strong> (20 min), drop bags at the desk. Room comes at 3 PM.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">8:15 AM <span class="area">Ginza line, Toranomon → Asakusa · 25 min direct</span></div>
+      <div class="day-section-items">
+        <div><strong>Sensō-ji</strong> — Kaminarimon gate, the Nakamise street, the temple. At 8:45 it's calm; the stalls open around 9–10 while you're there. 75 minutes.</div>
+        <div class="how">Toranomon Station is a 5-min walk from the hotel. Ginza line all the way to the last stop, Asakusa.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">10:30 AM <span class="area">Tsukiji Outer Market · taxi 20 min</span></div>
+      <div class="day-section-items">
+        <div><strong>Tsukiji</strong> brunch crawl — sushi, tamago on a stick, wagyu skewers, strawberries. Graze 6–8 stalls. Stalls run until ~2 PM.</div>
+        <div class="how">Taxi from Asakusa is simplest (~¥2,500). Train: Ginza line to Ueno → Hibiya line to Tsukiji, ~30 min.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">1:00 PM <span class="area">teamLab Planets, Toyosu · taxi 15 min</span></div>
+      <div class="day-section-items">
+        <div><strong>teamLab Planets</strong> — book the 1:00 or 1:30 slot. Barefoot, water rooms, mirrors. Wear pants you can roll up. 2 hours.</div>
+        <div class="tbd">TBD · book the ticket</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">4:00 PM <span class="area">Hotel Toranomon Hills · taxi 25 min</span></div>
+      <div class="day-section-items">
+        <div>Check in, rest. The Toranomon Hills towers have a whole food floor downstairs; Ginza is 10 min away.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">6:30 PM <span class="area">dinner</span></div>
+      <div class="day-section-items">
+        <div><span class="tbd">TBD · dinner near Toranomon / Ginza</span></div>
       </div>
     </div>
   </div>
 
+  <!-- DAY 3 -->
   <div class="day tk">
     <div class="day-header">
       <span class="day-date">Tuesday, Oct 27 · Day 3</span>
-      <span class="pending">Decide</span>
+      <span class="booked">Hotel Toranomon Hills</span>
     </div>
-    <div class="day-place">Tokyo · west side — or the mountain day</div>
+    <div class="day-place">Tokyo · Harajuku → Shibuya · ends at Shibuya Sky</div>
     <div class="day-section">
-      <div class="day-section-label">If staying in Tokyo</div>
+      <div class="day-section-label">9:30 AM <span class="area">Ginza line, Toranomon → Omotesandō · 12 min + 8-min walk</span></div>
       <div class="day-section-items">
-        <div><strong>Harajuku</strong> first: <strong>Samoyed Café moffu</strong> (booked slot), <strong>Latte Pocket</strong> for the 4D latte, Takeshita Street. Walk 15 min to <strong>Shibuya</strong>: Zuichō or Katsugyu for lunch, <strong>RURU</strong> matcha, <strong>Don Quijote</strong>, <strong>Shibuya Sky</strong> at sunset (book the ~4:45 PM slot), <strong>Hikiniku to Come</strong> for dinner if booked.</div>
-        <div class="meta">If Gōtokuji and Shiro-Hige didn't happen on Day 1, they go first thing — same west side of town.</div>
+        <div class="how">Harajuku is 20 min from the hotel. Meiji Jingū's forest shrine is right there if you want a quiet 30 minutes first.</div>
       </div>
     </div>
     <div class="day-section">
-      <div class="day-section-label">If doing Fuji or Hakone</div>
+      <div class="day-section-label">10:00 AM <span class="area">Samoyed Café moffu, Harajuku</span></div>
       <div class="day-section-items">
-        <div>Option A or B from the Fuji / Hakone card. The Shibuya food then gets squeezed into Day 1 evening or Day 2.</div>
+        <div><strong>moffu</strong> — the samoyed café. Book the 10:00 or 10:30 session online now; they go fast.</div>
+        <div class="tbd">TBD · book the session</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">11:15 AM <span class="area">Latte Pocket, Harajuku · 5-min walk</span></div>
+      <div class="day-section-items">
+        <div><strong>Latte Pocket</strong> — the 4D latte. Tiny place, short line, 30 minutes.</div>
+        <div>Then Takeshita Street and Cat Street, walking south.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">12:45 PM <span class="area">Shibuya · 20-min walk from Harajuku</span></div>
+      <div class="day-section-items">
+        <div><strong>Katsudon-ya Zuichō</strong> — get in line. 30–45 minutes, worth it. Lunch about 1:30.</div>
+        <div class="how">Backup if the line is wild: <strong>Gyukatsu Katsugyu</strong> on Dogenzaka, 5 min away.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">2:45 PM <span class="area">Shibuya</span></div>
+      <div class="day-section-items">
+        <div><strong>RURU</strong> for matcha, then <strong>MEGA Don Quijote</strong> if Day 1's didn't happen, or Miyashita Park / Parco for shopping.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">4:15 PM <span class="area">Shibuya Sky</span></div>
+      <div class="day-section-items">
+        <div><strong>Shibuya Sky</strong> — book the 4:00–4:20 entry. Sunset is 4:50; stay through blue hour till about 5:45. Then cross the Scramble on the way out.</div>
+        <div class="tbd">TBD · book the sunset slot</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">6:30 PM <span class="area">dinner</span></div>
+      <div class="day-section-items">
+        <div><strong>Hikiniku to Come</strong>, Shibuya — if the reservation lands.</div>
+        <div>Otherwise <span class="tbd">TBD · dinner in Shibuya</span></div>
+        <div class="how">Home: Ginza line from Shibuya straight to Toranomon, 13 min.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">If you do Fuji or Hakone instead</div>
+      <div class="day-section-items">
+        <div>Leave Shinjuku by 7:30 AM (Fuji: Fuji Excursion train or highway bus, ~2 hr · Hakone: Romancecar, 85 min). Back in Tokyo ~6 PM. Dinner <span class="tbd">TBD</span>.</div>
+        <div class="how">The Harajuku + Shibuya block then moves to Day 1 afternoon (swap with Gōtokuji / Shiro-Hige) — Shibuya is 10 min from the Park Hyatt.</div>
       </div>
     </div>
   </div>
 
+  <!-- DAY 4 -->
   <div class="day ky">
     <div class="day-header">
       <span class="day-date">Wednesday, Oct 28 · Day 4</span>
+      <span class="pending">Kyoto hotel TBD</span>
     </div>
-    <div class="day-place">Tokyo → Kyoto</div>
+    <div class="day-place">Tokyo → Kyoto · teamLab off the train</div>
     <div class="day-section">
-      <div class="day-section-label">The plan</div>
+      <div class="day-section-label">8:15 AM <span class="area">Tokyo Station · taxi 15 min</span></div>
       <div class="day-section-items">
-        <div>Bullet train, 2 hr 15 min (or the Hakone overnight, Option C). <strong>teamLab Biovortex</strong> is a 7-min walk from Kyoto Station — book a late-afternoon slot and do it straight off the train. Evening in <strong>Gion</strong> and along the river.</div>
-        <div class="meta">Tickets on the Smart-EX app; seats open a month ahead.</div>
+        <div>Check out, taxi to Tokyo Station. Grab an ekiben (train bento) in the basement.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">9:00 AM <span class="area">Nozomi Shinkansen → Kyoto · 2 hr 15 min</span></div>
+      <div class="day-section-items">
+        <div>Arrive Kyoto 11:15. Sit on the right side (E seats) for Mt. Fuji about 45 minutes in, if it's clear.</div>
+        <div class="tbd">TBD · book on Smart-EX</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">11:30 AM <span class="area">Kyoto Station</span></div>
+      <div class="day-section-items">
+        <div>Suitcases into the big lockers at the station (~¥700) — teamLab is right here, no point hauling them to the hotel yet.</div>
+        <div>Lunch <span class="tbd">TBD · Kyoto Station</span> — the 10th floor is a whole ramen street if nothing else.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">1:00 PM <span class="area">teamLab Biovortex Kyoto · 7-min walk</span></div>
+      <div class="day-section-items">
+        <div><strong>teamLab Biovortex</strong> — book the 1:00 slot. ~2 hours.</div>
+        <div class="tbd">TBD · book the ticket</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">3:30 PM <span class="area">hotel</span></div>
+      <div class="day-section-items">
+        <div>Grab the bags, taxi to the hotel, check in. <span class="tbd">TBD · Kyoto hotel</span></div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">5:00 PM <span class="area">Gion</span></div>
+      <div class="day-section-items">
+        <div>Sunset walk: Yasaka Shrine's lanterns, Hanamikōji street, the Shirakawa canal, then Pontochō along the river. Sunset 5:05.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">6:30 PM <span class="area">dinner</span></div>
+      <div class="day-section-items">
+        <div><span class="tbd">TBD · dinner in Gion / Pontochō</span></div>
+        <div class="how">If you take the Hakone overnight instead (Option C): this day is Hakone in the morning, Kyoto by ~4 PM, and teamLab moves to Day 8.</div>
       </div>
     </div>
   </div>
 
+  <!-- DAY 5 -->
   <div class="day ky">
     <div class="day-header">
       <span class="day-date">Thursday, Oct 29 · Day 5</span>
     </div>
-    <div class="day-place">Kyoto · Higashiyama</div>
+    <div class="day-place">Kyoto · kimono day in Higashiyama</div>
     <div class="day-section">
-      <div class="day-section-label">The plan</div>
+      <div class="day-section-label">9:00 AM <span class="area">kimono rental near Kiyomizu / Gion</span></div>
       <div class="day-section-items">
-        <div>Morning: <strong>kimono rental + matcha tasting</strong> (book ahead), then the <strong>Higashiyama walk</strong> in the kimono: Kiyomizu-dera → stone lanes → <strong>Hōkan-ji</strong> → Gion, with <strong>Nishiki Market</strong> for a grazing lunch. Return the kimono by late afternoon (shops close ~5–6 PM), <strong>K36</strong> at sunset, <strong>Yukichi Honpo</strong> ramen or <strong>Katsugyu</strong> after.</div>
+        <div>Kimono rental — dressing and hair take ~45 minutes. Pick a shop within a few minutes of Kiyomizu-dera so the walk starts right there.</div>
+        <div class="tbd">TBD · book the rental</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">10:00 AM <span class="area">matcha tasting · Higashiyama</span></div>
+      <div class="day-section-items">
+        <div><strong>Tea ceremony / matcha tasting</strong> in the kimono. Most run 45–60 minutes.</div>
+        <div class="tbd">TBD · book the tea ceremony</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">11:15 AM <span class="area">Kiyomizu-dera · 10-min walk uphill</span></div>
+      <div class="day-section-items">
+        <div><strong>Kiyomizu-dera</strong> (¥500) — the big wooden stage over the hillside. 45 minutes.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">12:15 PM <span class="area">the Higashiyama walk · downhill, all on foot</span></div>
+      <div class="day-section-items">
+        <div>Sannenzaka → Ninenzaka stone lanes → <strong>Hōkan-ji</strong> (the Yasaka Pagoda — the photo) → Yasaka Shrine → Gion. Slow, lots of photos in the kimono. ~90 minutes.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">2:00 PM <span class="area">Nishiki Market · 10-min taxi or 25-min walk</span></div>
+      <div class="day-section-items">
+        <div><strong>Nishiki Market</strong> grazing lunch — five blocks of stalls. Eat standing at the stall, not walking.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">3:30 PM <span class="area">return the kimono · taxi 10 min</span></div>
+      <div class="day-section-items">
+        <div>Rentals are usually due back by 5–6 PM. Change, then a short rest at the hotel.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">4:30 PM <span class="area">K36 The Bar &amp; Rooftop · Hotel Seiryu, next to Hōkan-ji</span></div>
+      <div class="day-section-items">
+        <div><strong>K36</strong> — pizza and cocktails on the roof, looking straight at the pagoda. Sunset 5:05. Reserve, or be there by 4:30.</div>
+        <div class="tbd">TBD · reserve</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">7:30 PM <span class="area">dinner · central Kyoto, 10–15 min taxi</span></div>
+      <div class="day-section-items">
+        <div><strong>Kyoto Ramen Yukichi Honpo</strong> — walk-in, counter seats. Then one more Pontochō walk if there's energy.</div>
       </div>
     </div>
   </div>
 
+  <!-- DAY 6 -->
   <div class="day ky">
     <div class="day-header">
       <span class="day-date">Friday, Oct 30 · Day 6</span>
     </div>
-    <div class="day-place">Kyoto · Arashiyama</div>
+    <div class="day-place">Kyoto · Arashiyama by boat, then the Golden Pavilion</div>
     <div class="day-section">
-      <div class="day-section-label">The plan</div>
+      <div class="day-section-label">8:00 AM <span class="area">JR Sagano line, Kyoto Station → Kameoka · 25 min</span></div>
       <div class="day-section-items">
-        <div>Morning <strong>Hozugawa boat</strong> (train to Kameoka first), ends in Arashiyama → <strong>bamboo forest</strong> → <strong>monkey park</strong>. <strong>Kinkaku-ji</strong> on the way back in the afternoon.</div>
+        <div class="how">Boat dock is an 8-min walk from JR Kameoka station. Be there 20 min before departure.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">9:00 AM <span class="area">Hozugawa river boat · 2 hours</span></div>
+      <div class="day-section-items">
+        <div><strong>Hozugawa boat</strong> down the gorge — traditional wooden boat, boatmen with poles, light rapids. Ends at the Arashiyama bridge ~11:00.</div>
+        <div class="tbd">TBD · book the 9:00 boat</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">11:15 AM <span class="area">Arashiyama · on foot</span></div>
+      <div class="day-section-items">
+        <div>Togetsukyō bridge → <strong>bamboo forest</strong> (10-min path, 10-min walk from the bridge). It'll be busy by now; it's still the bamboo forest.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">12:30 PM <span class="area">lunch</span></div>
+      <div class="day-section-items">
+        <div><span class="tbd">TBD · lunch in Arashiyama</span> — the main street by the bridge is lined with options.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">1:30 PM <span class="area">monkey park · south end of the bridge</span></div>
+      <div class="day-section-items">
+        <div><strong>Iwatayama Monkey Park</strong> — 20-min steep climb, macaques at the top, city view. ~1 hour round trip.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">3:00 PM <span class="area">Kinkaku-ji · taxi 25 min (~¥3,000)</span></div>
+      <div class="day-section-items">
+        <div><strong>Kinkaku-ji</strong>, the Golden Pavilion (¥500) — last entry 5 PM. 40 minutes is plenty.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">4:30 PM <span class="area">back to central Kyoto · bus or taxi 25 min</span></div>
+      <div class="day-section-items">
+        <div>Rest at the hotel.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">6:30 PM <span class="area">dinner</span></div>
+      <div class="day-section-items">
+        <div><strong>Gyukatsu Katsugyu</strong> — the Kyoto branch, walk-in. The beef cutlet you sear yourself.</div>
       </div>
     </div>
   </div>
 
+  <!-- DAY 7 -->
   <div class="day ky">
     <div class="day-header">
-      <span class="day-date">Saturday, Oct 31 · Day 7</span>
+      <span class="day-date">Saturday, Oct 31 · Day 7 · Halloween</span>
     </div>
-    <div class="day-place">Nara day trip</div>
+    <div class="day-place">Nara · deer and the Great Buddha</div>
     <div class="day-section">
-      <div class="day-section-label">The plan</div>
+      <div class="day-section-label">8:30 AM <span class="area">Kintetsu line, Kyoto Station → Kintetsu-Nara · 35–45 min</span></div>
       <div class="day-section-items">
-        <div><strong>Deer park + Tōdai-ji</strong> in the morning, back in Kyoto by mid-afternoon. It's Halloween on a Saturday — Osaka's Dōtonbori is 15 min away if they want the scene; Shibuya is the one place to avoid.</div>
+        <div class="how">Limited express is reserved and 35 min (~¥1,300); the regular express is 45 min (~¥760). Either is fine.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">9:30 AM <span class="area">Nara Park · 15-min walk from the station</span></div>
+      <div class="day-section-items">
+        <div><strong>The deer</strong> — ¥200 for crackers, they bow, then they mob you. Keep the crackers hidden until you're ready.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">10:15 AM <span class="area">Tōdai-ji · in the park</span></div>
+      <div class="day-section-items">
+        <div><strong>Tōdai-ji</strong> (¥800) — the giant bronze Buddha in the world's biggest wooden hall. 45 minutes.</div>
+        <div>Then the lantern-lined path to Kasuga Taisha if you want another 45 minutes in the park.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">12:30 PM <span class="area">lunch</span></div>
+      <div class="day-section-items">
+        <div><span class="tbd">TBD · lunch in Nara</span> — catch the mochi-pounding show at Nakatanidō on the walk back toward the station.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">2:00 PM <span class="area">back to Kyoto · ~45 min</span></div>
+      <div class="day-section-items">
+        <div>Rest, or whatever got missed earlier in the week.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">6:30 PM <span class="area">dinner + Halloween night</span></div>
+      <div class="day-section-items">
+        <div><span class="tbd">TBD · dinner</span></div>
+        <div>It's Halloween on a Saturday. The scene is Osaka's Dōtonbori (Shinkansen 15 min or JR 30 min; last trains back around midnight) or the bars along Kiyamachi in Kyoto. Pick one, or skip it.</div>
       </div>
     </div>
   </div>
 
+  <!-- DAY 8 -->
   <div class="day tr">
     <div class="day-header">
       <span class="day-date">Sunday, Nov 1 · Day 8</span>
       <span class="pending">Decide</span>
     </div>
-    <div class="day-place">Open day</div>
+    <div class="day-place">Open day · Kyoto or back to Tokyo</div>
     <div class="day-section">
-      <div class="day-section-label">The plan</div>
+      <div class="day-section-label">Option A <span class="area">stay in Kyoto, train tomorrow morning</span></div>
       <div class="day-section-items">
-        <div>Either a last Kyoto day (anything missed, or Fushimi Inari at dawn) with the bullet train the next morning, or head back to Tokyo tonight for a last Tokyo evening near the airport.</div>
+        <div>Morning: anything missed (teamLab if it moved; Fushimi Inari's torii tunnel at 7 AM is the one big Kyoto thing not on the list, 5 min by train). Afternoon: shopping around Kawaramachi. Pack.</div>
+        <div>Lunch <span class="tbd">TBD</span> · Dinner <span class="tbd">TBD</span></div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">Option B <span class="area">back to Tokyo tonight</span></div>
+      <div class="day-section-items">
+        <div>10:00 AM Shinkansen → Tokyo 12:15. Hotel near Shinagawa or at the airport. Last Tokyo afternoon for whatever got skipped.</div>
+        <div>Hotel <span class="tbd">TBD</span> · Dinner <span class="tbd">TBD</span></div>
       </div>
     </div>
   </div>
 
+  <!-- DAY 9 -->
   <div class="day tr">
     <div class="day-header">
       <span class="day-date">Monday, Nov 2 · Day 9</span>
     </div>
-    <div class="day-place">Home</div>
+    <div class="day-place">Home · 6:00 PM flight</div>
     <div class="day-section">
-      <div class="day-section-label">The plan</div>
+      <div class="day-section-label">From Kyoto</div>
       <div class="day-section-items">
-        <div>6 PM flight. At the airport by 3 PM. From Kyoto that means a bullet train no later than ~10 AM; from a Tokyo hotel it's a slow morning.</div>
+        <div>9:00 AM Shinkansen → Tokyo / Shinagawa 11:15. Haneda: Keikyu from Shinagawa, 15 min. Narita: Narita Express from Tokyo Station, 55 min. At the airport by 1 PM either way — lunch there, check-in opens at 3.</div>
+      </div>
+    </div>
+    <div class="day-section">
+      <div class="day-section-label">From Tokyo</div>
+      <div class="day-section-items">
+        <div>Check out by 11, slow morning, at the airport by 3 PM.</div>
       </div>
     </div>
   </div>
