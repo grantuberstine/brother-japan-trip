@@ -14,3 +14,20 @@ Plain static `index.html`, no build step, GitHub Pages (branch `main`, root).
 ```bash
 ./update.sh
 ```
+
+## Adding a food or activity
+
+Each list is a `.flights` box of `.flight-row` entries. Copy one and change the three parts:
+
+```html
+<div class="flight-row">
+  <div class="num"><strong>★</strong></div>                 <!-- emoji or star -->
+  <div class="route">
+    <div class="cities">Name of the place</div>
+    <div class="note">One line about it</div>
+  </div>
+  <div class="airports">Neighborhood</div>
+</div>
+```
+
+Paste it above the dashed "add more … here" row in the right list, then `./update.sh`.
